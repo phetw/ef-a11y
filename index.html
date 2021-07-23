@@ -4,9 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>a11y</title>
   </head>
   <body>
+    <script src="./index.js"></script>
+    <style>
+      body {
+        padding: 20px;
+      }
+      .panel {
+        padding: 20px;
+        background-color: #1a1a1a;
+      }
+    </style>
     <h1>a11y</h1>
+
+    <h2>Button</h2>
+    <div class="panel">
+      <h3>Default</h3>
+      <ef-button id="default">Print</ef-button>
+      <div class="panel">Tap <span id="default-text">0</span></div>
+      <script>
+        let count = 1;
+        const txt = document.getElementById('default-text');
+        document.getElementById('default').addEventListener('tap', () => {
+          txt.innerHTML = count++;
+        });
+      </script>
+      <h3>Toggle button</h3>
+      <ef-button id="toggle-button" toggles>Play</ef-button>
+      <div class="panel">Status: <span id="toggle-button-text"></span></div>
+
+      <script>
+        const txt2 = document.getElementById('toggle-button-text');
+        document.getElementById('toggle-button').addEventListener('active-changed', (e) => {
+          txt2.innerHTML = e.target.active ? '|> Play' : '|| Pause';
+        });
+      </script>
+    </div>
+
+    <h2>Combo-box</h2>
+    <div class="panel">
+      <h3>Default</h3>
+      <ef-combo-box id="1"></ef-combo-box>
+
+      <br />
+      <br />
+      <br />
+
+      <h3>Multiple</h3>
+      <ef-combo-box id="2" multiple></ef-combo-box>
+    </div>
+    <script>
+      (function () {
+        document.querySelectorAll('ef-combo-box').forEach((el) => {
+          el.data = [
+            { id: 'opt1', label: '1', value: '1' },
+            { id: 'opt2', label: '2', value: '2' }
+          ];
+        });
+      })();
+    </script>
   </body>
 </html>
