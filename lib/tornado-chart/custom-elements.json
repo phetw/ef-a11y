@@ -1,0 +1,45 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-tornado-chart",
+      "description": "A data visualization that helps to\nshow the differences or similarities between values",
+      "attributes": [
+        {
+          "name": "primary",
+          "description": "Primary bar chart legend text",
+          "type": "string | null"
+        },
+        {
+          "name": "secondary",
+          "description": "Secondary bar chart legend text",
+          "type": "string | null"
+        }
+      ],
+      "properties": [
+        {
+          "name": "primary",
+          "attribute": "primary",
+          "description": "Primary bar chart legend text",
+          "type": "string | null"
+        },
+        {
+          "name": "secondary",
+          "attribute": "secondary",
+          "description": "Secondary bar chart legend text",
+          "type": "string | null"
+        }
+      ],
+      "slots": [
+        {
+          "name": "header",
+          "description": "Any HTML contents to display at chart header section"
+        },
+        {
+          "name": "footer",
+          "description": "Any HTML contents to display at chart footer section"
+        }
+      ]
+    }
+  ]
+}

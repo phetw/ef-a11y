@@ -1,0 +1,42 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-chart",
+      "description": "Charting component that use chartjs library",
+      "attributes": [
+        {
+          "name": "config",
+          "description": "Chart configurations. Same configuration as ChartJS",
+          "type": "ChartConfig"
+        }
+      ],
+      "properties": [
+        {
+          "name": "config",
+          "attribute": "config",
+          "description": "Chart configurations. Same configuration as ChartJS",
+          "type": "ChartConfig"
+        },
+        {
+          "name": "colors",
+          "description": "List of avalaible chart colors",
+          "type": "string[]"
+        }
+      ],
+      "methods": [
+        {
+          "name": "updateChart",
+          "description": "Update all data, title, scales, legends and re-render the chart based on its config",
+          "params": [
+            {
+              "name": "config",
+              "description": "Additional configuration for control an animation in the update process.",
+              "type": "ChartUpdateProps"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

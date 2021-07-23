@@ -1,0 +1,200 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-number-field",
+      "description": "Form control element for numbers",
+      "attributes": [
+        {
+          "name": "placeholder",
+          "description": "Set placeholder text",
+          "type": "string | null"
+        },
+        {
+          "name": "no-spinner",
+          "description": "Set spinner's visibility",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "step",
+          "description": "Set step value",
+          "type": "string | null"
+        },
+        {
+          "name": "min",
+          "description": "Set minimum value.\nThis value must be less than or equal to the value of the `max` attribute",
+          "type": "string | null"
+        },
+        {
+          "name": "max",
+          "description": "Set maximum value.\nThis value must be greater than or equal to the value of the `min` attribute",
+          "type": "string | null"
+        },
+        {
+          "name": "transparent",
+          "description": "Set state to transparent",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "error",
+          "description": "Set state to error",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "warning",
+          "description": "Set state to warning",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "description": "The value of the number entered into the input.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "readonly",
+          "description": "Set readonly state",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "placeholder",
+          "attribute": "placeholder",
+          "description": "Set placeholder text",
+          "type": "string | null"
+        },
+        {
+          "name": "noSpinner",
+          "attribute": "no-spinner",
+          "description": "Set spinner's visibility",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "step",
+          "attribute": "step",
+          "description": "Set step value",
+          "type": "string | null"
+        },
+        {
+          "name": "min",
+          "attribute": "min",
+          "description": "Set minimum value.\nThis value must be less than or equal to the value of the `max` attribute",
+          "type": "string | null"
+        },
+        {
+          "name": "max",
+          "attribute": "max",
+          "description": "Set maximum value.\nThis value must be greater than or equal to the value of the `min` attribute",
+          "type": "string | null"
+        },
+        {
+          "name": "transparent",
+          "attribute": "transparent",
+          "description": "Set state to transparent",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "error",
+          "attribute": "error",
+          "description": "Set state to error",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "warning",
+          "attribute": "warning",
+          "description": "Set state to warning",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "valueAsNumber",
+          "description": "Returns the value of the element, interpreted as double number",
+          "type": "number"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "The value of the number entered into the input.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "readonly",
+          "attribute": "readonly",
+          "description": "Set readonly state",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "events": [
+        {
+          "name": "value-changed",
+          "description": "Dispatched when value changes"
+        },
+        {
+          "name": "error-changed",
+          "description": "Dispatched when error state changes"
+        }
+      ],
+      "methods": [
+        {
+          "name": "stepUp",
+          "description": "Increases the input value by amount of step",
+          "params": [
+            {
+              "name": "stepIncrement",
+              "description": "The stepIncrement parameter is a numeric value. If no parameter is passed, stepIncrement defaults to 1."
+            }
+          ]
+        },
+        {
+          "name": "stepDown",
+          "description": "Decreases the input value by amount of step",
+          "params": [
+            {
+              "name": "stepIncrement",
+              "description": "The stepIncrement parameter is a numeric value. If no parameter is passed, stepIncrement defaults to 1."
+            }
+          ]
+        },
+        {
+          "name": "checkValidity",
+          "description": "Returns true if an input element contains valid data.",
+          "params": []
+        },
+        {
+          "name": "reportValidity",
+          "description": "Validate input. Mark as error if input is invalid",
+          "params": []
+        },
+        {
+          "name": "select",
+          "description": "Select the contents of input",
+          "params": []
+        }
+      ]
+    }
+  ]
+}

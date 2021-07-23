@@ -1,0 +1,103 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-select",
+      "description": "Expands upon the native select element,\nproviding a fully themeable dropdown element.",
+      "attributes": [
+        {
+          "name": "placeholder",
+          "description": "Placeholder to display when no value is set",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "opened",
+          "description": "Toggles the opened state of the list",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "error",
+          "description": "Set state to error",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "warning",
+          "description": "Set state to warning",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "label",
+          "description": "Current text content of the selected value",
+          "type": "string"
+        },
+        {
+          "name": "placeholder",
+          "attribute": "placeholder",
+          "description": "Placeholder to display when no value is set",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "opened",
+          "attribute": "opened",
+          "description": "Toggles the opened state of the list",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "error",
+          "attribute": "error",
+          "description": "Set state to error",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "warning",
+          "attribute": "warning",
+          "description": "Set state to warning",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "data",
+          "description": "Construct the menu from data object. Cannot be used with slotted content",
+          "type": "SelectData | null"
+        },
+        {
+          "name": "value",
+          "description": "Value of the element",
+          "type": "string"
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "events": [
+        {
+          "name": "value-changed",
+          "description": "Fired when the value property changes."
+        },
+        {
+          "name": "opened-changed",
+          "description": "Fired when the opened property changes."
+        }
+      ]
+    }
+  ]
+}

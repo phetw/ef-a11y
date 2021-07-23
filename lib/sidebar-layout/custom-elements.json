@@ -1,0 +1,72 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-sidebar-layout",
+      "description": "Provides an app layout with sidebar.\nThere are 4 sections that can be slotted a component in.",
+      "attributes": [
+        {
+          "name": "sidebar-width",
+          "description": "Set the width of the sidebar. The value could be in both px or %, e.g. 300px, 30%",
+          "type": "string"
+        },
+        {
+          "name": "collapsed",
+          "description": "Set to hide sidebar",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "sidebar-position",
+          "description": "Set sidebar position to left or right",
+          "type": "\"left\" | \"right\"",
+          "default": "\"left\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "sidebarWidth",
+          "attribute": "sidebar-width",
+          "description": "Set the width of the sidebar. The value could be in both px or %, e.g. 300px, 30%",
+          "type": "string"
+        },
+        {
+          "name": "collapsed",
+          "attribute": "collapsed",
+          "description": "Set to hide sidebar",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "sidebarPosition",
+          "attribute": "sidebar-position",
+          "description": "Set sidebar position to left or right",
+          "type": "\"left\" | \"right\"",
+          "default": "\"left\""
+        },
+        {
+          "name": "sidebar",
+          "description": "Property to get sidebar"
+        }
+      ],
+      "slots": [
+        {
+          "name": "sidebar-header",
+          "description": "Sidebar header."
+        },
+        {
+          "name": "sidebar-content",
+          "description": "Content of sidebar."
+        },
+        {
+          "name": "main-header",
+          "description": "Main header."
+        },
+        {
+          "name": "main-content",
+          "description": "Content of main section."
+        }
+      ]
+    }
+  ]
+}

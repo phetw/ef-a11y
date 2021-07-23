@@ -1,0 +1,95 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-pill",
+      "description": "A small button style component\nwhich is used to show one or multiple selected item.\nIt is rarely used in the UI but inside other components to visualize multiple item selection item.",
+      "attributes": [
+        {
+          "name": "clears",
+          "description": "Set pill to clearable",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "toggles",
+          "description": "Set pill to toggle mode",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "active",
+          "description": "Add to pill for active state",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "description": "Value of pill",
+          "type": "string"
+        },
+        {
+          "name": "readonly",
+          "description": "Set readonly state",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "clears",
+          "attribute": "clears",
+          "description": "Set pill to clearable",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "toggles",
+          "attribute": "toggles",
+          "description": "Set pill to toggle mode",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "active",
+          "attribute": "active",
+          "description": "Add to pill for active state",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "Value of pill",
+          "type": "string"
+        },
+        {
+          "name": "readonly",
+          "attribute": "readonly",
+          "description": "Set readonly state",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "events": [
+        {
+          "name": "clear",
+          "description": "Fires when click on cross occurs. `detail.value` provides value of pill if defined. `detail.active` provides current selected state."
+        }
+      ]
+    }
+  ]
+}

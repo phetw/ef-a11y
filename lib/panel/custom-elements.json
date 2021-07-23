@@ -1,0 +1,39 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-panel",
+      "description": "A container for components.\nIt provides a standard background color and padding, depends on theme.",
+      "attributes": [
+        {
+          "name": "spacing",
+          "description": "Apply default padding from theme",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "transparent",
+          "description": "Set panel background to transparent",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "spacing",
+          "attribute": "spacing",
+          "description": "Apply default padding from theme",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "transparent",
+          "attribute": "transparent",
+          "description": "Set panel background to transparent",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
+    }
+  ]
+}

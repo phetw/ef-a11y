@@ -1,0 +1,113 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-led-gauge",
+      "description": "A component used to show data in a LED-like\nhorizontal bar visualization.",
+      "attributes": [
+        {
+          "name": "top-value",
+          "description": "Value of bar for top legend position\nValue can be -100 to 100",
+          "type": "number | null"
+        },
+        {
+          "name": "bottom-value",
+          "description": "Value of bar for bottom legend position\nValue can be -100 to 100",
+          "type": "number | null"
+        },
+        {
+          "name": "range",
+          "description": "Value of range. eg [-20, 70]",
+          "type": "object",
+          "default": "[]"
+        },
+        {
+          "name": "top-label",
+          "description": "Label to be displayed in the top legend",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "bottom-label",
+          "description": "Label to be displayed in the bottom legend",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "range-label",
+          "description": "Label to be displayed in the bottom legend\nwhen a range is displayed\nand no bottom text is already set.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "neutral-color",
+          "description": "Turn off background color and use grey",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "zero",
+          "description": "Sets the zero scale position. [center, left, right]",
+          "type": "string",
+          "default": "\"center\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "topValue",
+          "attribute": "top-value",
+          "description": "Value of bar for top legend position\nValue can be -100 to 100",
+          "type": "number | null"
+        },
+        {
+          "name": "bottomValue",
+          "attribute": "bottom-value",
+          "description": "Value of bar for bottom legend position\nValue can be -100 to 100",
+          "type": "number | null"
+        },
+        {
+          "name": "range",
+          "attribute": "range",
+          "description": "Value of range. eg [-20, 70]",
+          "type": "object",
+          "default": "[]"
+        },
+        {
+          "name": "topLabel",
+          "attribute": "top-label",
+          "description": "Label to be displayed in the top legend",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "bottomLabel",
+          "attribute": "bottom-label",
+          "description": "Label to be displayed in the bottom legend",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "rangeLabel",
+          "attribute": "range-label",
+          "description": "Label to be displayed in the bottom legend\nwhen a range is displayed\nand no bottom text is already set.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "neutralColor",
+          "attribute": "neutral-color",
+          "description": "Turn off background color and use grey",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "zero",
+          "attribute": "zero",
+          "description": "Sets the zero scale position. [center, left, right]",
+          "type": "string",
+          "default": "\"center\""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-notification",
+      "description": "Used to show informative content when something happens in the application",
+      "attributes": [
+        {
+          "name": "message",
+          "description": "The message to show in the notification.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "confirm",
+          "description": "Notification style: Confirm",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "warning",
+          "description": "Notification style: Warning",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "error",
+          "description": "Notification style: Error",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "collapsed",
+          "description": "Toggles the collapsed state.",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "message",
+          "attribute": "message",
+          "description": "The message to show in the notification.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "confirm",
+          "attribute": "confirm",
+          "description": "Notification style: Confirm",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "warning",
+          "attribute": "warning",
+          "description": "Notification style: Warning",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "error",
+          "attribute": "error",
+          "description": "Notification style: Error",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "collapsed",
+          "attribute": "collapsed",
+          "description": "Toggles the collapsed state.",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "events": [
+        {
+          "name": "collapsed",
+          "description": "Dispatched when notification is collapsed"
+        },
+        {
+          "name": "dismiss",
+          "description": "Dispatched when notification is dismissed"
+        }
+      ],
+      "methods": [
+        {
+          "name": "dismiss",
+          "description": "Dismisses the notification, firing a `dismiss` event and collapsing the notification.",
+          "params": []
+        }
+      ]
+    }
+  ]
+}

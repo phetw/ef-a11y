@@ -12,7 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "@refinitiv-ui/elements": "^5.0.0",
-    "@refinitiv-ui/halo-theme": "^5.0.0"
+    "@refinitiv-ui/halo-theme": "^5.0.0",
+    "regenerator-runtime": "^0.13.9"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5"

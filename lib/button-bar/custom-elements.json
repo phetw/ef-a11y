@@ -1,0 +1,26 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-button-bar",
+      "description": "Used to display multiple buttons to create a list of commands bar.",
+      "attributes": [
+        {
+          "name": "managed",
+          "description": "Manages user interaction, only allowing one toggle button to be active at any one time.",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "managed",
+          "attribute": "managed",
+          "description": "Manages user interaction, only allowing one toggle button to be active at any one time.",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
+    }
+  ]
+}

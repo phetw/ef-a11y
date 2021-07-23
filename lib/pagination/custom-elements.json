@@ -1,0 +1,93 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-pagination",
+      "description": "Used to control and navigate through multiple pages",
+      "attributes": [
+        {
+          "name": "page",
+          "description": "Set current page",
+          "type": "string",
+          "default": "\"1\""
+        },
+        {
+          "name": "page-size",
+          "description": "Number of item per page",
+          "type": "string",
+          "default": "\"10\""
+        },
+        {
+          "name": "total-items",
+          "description": "Total items",
+          "type": "string",
+          "default": "\"10\""
+        },
+        {
+          "name": "disabled",
+          "description": "Set state to disable",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "page",
+          "attribute": "page",
+          "description": "Set current page",
+          "type": "string",
+          "default": "\"1\""
+        },
+        {
+          "name": "pageSize",
+          "attribute": "page-size",
+          "description": "Number of item per page",
+          "type": "string",
+          "default": "\"10\""
+        },
+        {
+          "name": "totalItems",
+          "attribute": "total-items",
+          "description": "Total items",
+          "type": "string",
+          "default": "\"10\""
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Set state to disable",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "events": [
+        {
+          "name": "page-changed",
+          "description": "Fired when the `page` property is changed"
+        }
+      ],
+      "methods": [
+        {
+          "name": "next",
+          "description": "Go to the next page",
+          "params": []
+        },
+        {
+          "name": "previous",
+          "description": "Go to the previous page",
+          "params": []
+        },
+        {
+          "name": "first",
+          "description": "Go to the first page",
+          "params": []
+        },
+        {
+          "name": "last",
+          "description": "Go to the last page",
+          "params": []
+        }
+      ]
+    }
+  ]
+}

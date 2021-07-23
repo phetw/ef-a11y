@@ -1,0 +1,134 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-tab",
+      "description": "A building block for individual tab",
+      "attributes": [
+        {
+          "name": "icon",
+          "description": "Specify icon name to display in tab",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "description": "Specify tab's label text",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "sub-label",
+          "description": "Specify tab's sub-label text",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "active",
+          "description": "Specify tab's active status",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "clears",
+          "description": "Set tab to clearable",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "truncate",
+          "description": "Enable shortening the label",
+          "type": "\"\" | \"center\" | null | undefined",
+          "default": "\"\""
+        },
+        {
+          "name": "max-line",
+          "description": "Limit the number of lines before truncating",
+          "type": "string | null | undefined"
+        },
+        {
+          "name": "clears-on-hover",
+          "description": "Set tab to clearable on hover",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "description": "Specify icon name to display in tab",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "description": "Specify tab's label text",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "subLabel",
+          "attribute": "sub-label",
+          "description": "Specify tab's sub-label text",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "active",
+          "attribute": "active",
+          "description": "Specify tab's active status",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "clears",
+          "attribute": "clears",
+          "description": "Set tab to clearable",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "truncate",
+          "attribute": "truncate",
+          "description": "Enable shortening the label",
+          "type": "\"\" | \"center\" | null | undefined",
+          "default": "\"\""
+        },
+        {
+          "name": "maxLine",
+          "attribute": "max-line",
+          "description": "Limit the number of lines before truncating",
+          "type": "string | null | undefined"
+        },
+        {
+          "name": "clearsOnHover",
+          "attribute": "clears-on-hover",
+          "description": "Set tab to clearable on hover",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "events": [
+        {
+          "name": "clear",
+          "description": "Fires when click on cross occurs. `detail.label` provides label of tab if defined. `detail.active` provides current active state."
+        }
+      ]
+    }
+  ]
+}

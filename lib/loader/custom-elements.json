@@ -1,0 +1,9 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-loader",
+      "description": "An animated graphical component,\nused to show that an app is performing an action\nin the background such as downloading content."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-radio-button",
+      "description": "Basic radio button",
+      "attributes": [
+        {
+          "name": "checked",
+          "description": "Radio button checked state",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "description": "Value of the radio button",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "name",
+          "description": "Group multiple radio buttons by assigning the same name",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "readonly",
+          "description": "Set readonly state",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "checked",
+          "attribute": "checked",
+          "description": "Radio button checked state",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "Value of the radio button",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "name",
+          "attribute": "name",
+          "description": "Group multiple radio buttons by assigning the same name",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "readonly",
+          "attribute": "readonly",
+          "description": "Set readonly state",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "events": [
+        {
+          "name": "checked-changed",
+          "description": "Fired when the `checked` property changes."
+        }
+      ]
+    }
+  ]
+}

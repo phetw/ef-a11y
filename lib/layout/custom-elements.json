@@ -1,0 +1,163 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-layout",
+      "description": "Layout component for creating responsive applications and components",
+      "attributes": [
+        {
+          "name": "debug",
+          "description": "Displays debug lines.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "flex",
+          "description": "Tells the element to display flex,\ndisplaying children in a row wrap layout.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "container",
+          "description": "Tells the element to display as a container,\ndisplaying children in a vertical nowrap layout.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "noflex",
+          "description": "Prevents the element from being flexible,\nwhen inside of another flex layout.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "nowrap",
+          "description": "Prevents wrapping flex items,\nwhen the parent isn't a container.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "scrollable",
+          "description": "Makes the element a scrollable viewport.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "size",
+          "description": "Sets the fixed size of the element.\nValue could be pixel, percents or auto.",
+          "type": "string | null"
+        },
+        {
+          "name": "basis",
+          "description": "Sets the rough size of the element based on other siblings and content.\nValue could be pixel, percents or auto.",
+          "type": "string | null"
+        },
+        {
+          "name": "min-width",
+          "description": "Allows the width to shrink below its contents.\nAlso prevents the width from shrinking past a certain point.\nValue could be pixel, percents or _empty_.",
+          "type": "string | null"
+        },
+        {
+          "name": "min-height",
+          "description": "Allows the height to shrink below its contents.\nAlso prevents the height from shrinking past a certain point.\nValue could be pixel, percents or _empty_.",
+          "type": "string | null"
+        },
+        {
+          "name": "max-width",
+          "description": "Prevents the width from expanding past a certain point.\nValue could be pixel, percents or _empty_.",
+          "type": "string | null"
+        },
+        {
+          "name": "max-height",
+          "description": "Prevents the height from expanding past a certain point.\nValue could be pixel, percents or _empty_.",
+          "type": "string | null"
+        }
+      ],
+      "properties": [
+        {
+          "name": "debug",
+          "attribute": "debug",
+          "description": "Displays debug lines.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "flex",
+          "attribute": "flex",
+          "description": "Tells the element to display flex,\ndisplaying children in a row wrap layout.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "container",
+          "attribute": "container",
+          "description": "Tells the element to display as a container,\ndisplaying children in a vertical nowrap layout.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "noflex",
+          "attribute": "noflex",
+          "description": "Prevents the element from being flexible,\nwhen inside of another flex layout.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "nowrap",
+          "attribute": "nowrap",
+          "description": "Prevents wrapping flex items,\nwhen the parent isn't a container.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "scrollable",
+          "attribute": "scrollable",
+          "description": "Makes the element a scrollable viewport.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "size",
+          "attribute": "size",
+          "description": "Sets the fixed size of the element.\nValue could be pixel, percents or auto.",
+          "type": "string | null"
+        },
+        {
+          "name": "basis",
+          "attribute": "basis",
+          "description": "Sets the rough size of the element based on other siblings and content.\nValue could be pixel, percents or auto.",
+          "type": "string | null"
+        },
+        {
+          "name": "minWidth",
+          "attribute": "min-width",
+          "description": "Allows the width to shrink below its contents.\nAlso prevents the width from shrinking past a certain point.\nValue could be pixel, percents or _empty_.",
+          "type": "string | null"
+        },
+        {
+          "name": "minHeight",
+          "attribute": "min-height",
+          "description": "Allows the height to shrink below its contents.\nAlso prevents the height from shrinking past a certain point.\nValue could be pixel, percents or _empty_.",
+          "type": "string | null"
+        },
+        {
+          "name": "maxWidth",
+          "attribute": "max-width",
+          "description": "Prevents the width from expanding past a certain point.\nValue could be pixel, percents or _empty_.",
+          "type": "string | null"
+        },
+        {
+          "name": "maxHeight",
+          "attribute": "max-height",
+          "description": "Prevents the height from expanding past a certain point.\nValue could be pixel, percents or _empty_.",
+          "type": "string | null"
+        }
+      ],
+      "events": [
+        {
+          "name": "resize",
+          "description": "Fired when the element's size changes."
+        }
+      ]
+    }
+  ]
+}

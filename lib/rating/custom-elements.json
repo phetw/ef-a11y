@@ -1,0 +1,58 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-rating",
+      "description": "Star visualisation component that is generally used for ranking",
+      "attributes": [
+        {
+          "name": "interactive",
+          "description": "Make it possible to interact with rating control and change the value",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "max",
+          "description": "Set number of total stars",
+          "type": "string",
+          "default": "\"5\""
+        },
+        {
+          "name": "value",
+          "description": "Set number of selected stars. Value can be any number between 0 and `max`.\nDecimal values are calculated to empty star (0 - .25); half-star (.25 - .75) and full star (.75 - 1)",
+          "type": "string",
+          "default": "\"0\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "interactive",
+          "attribute": "interactive",
+          "description": "Make it possible to interact with rating control and change the value",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "max",
+          "attribute": "max",
+          "description": "Set number of total stars",
+          "type": "string",
+          "default": "\"5\""
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "Set number of selected stars. Value can be any number between 0 and `max`.\nDecimal values are calculated to empty star (0 - .25); half-star (.25 - .75) and full star (.75 - 1)",
+          "type": "string",
+          "default": "\"0\""
+        }
+      ],
+      "events": [
+        {
+          "name": "value-changed",
+          "description": "Fired when the `value` changes."
+        }
+      ]
+    }
+  ]
+}

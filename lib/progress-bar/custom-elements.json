@@ -1,0 +1,58 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-progress-bar",
+      "description": "Data visualisation component,\nshowing a simple percentage bar.",
+      "attributes": [
+        {
+          "name": "value",
+          "description": "The current value of the bar.\nThis can range from `0-100` and\nwill be represented as a percentage bar",
+          "type": "string",
+          "default": "\"100\""
+        },
+        {
+          "name": "alignment",
+          "description": "The alignment of the bar.\nThe bar can either start from the `left` or `right`.",
+          "type": "string",
+          "default": "\"left\""
+        },
+        {
+          "name": "label",
+          "description": "The current label to be displayed next to the bar.\nThis is affixed to the end of the bar, so make sure to cater for this.",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "The current value of the bar.\nThis can range from `0-100` and\nwill be represented as a percentage bar",
+          "type": "string",
+          "default": "\"100\""
+        },
+        {
+          "name": "alignment",
+          "attribute": "alignment",
+          "description": "The alignment of the bar.\nThe bar can either start from the `left` or `right`.",
+          "type": "string",
+          "default": "\"left\""
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "description": "The current label to be displayed next to the bar.\nThis is affixed to the end of the bar, so make sure to cater for this.",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "label",
+          "description": "Overrides the label property and places custom content. Useful for modifying the color, or, adding icons."
+        }
+      ]
+    }
+  ]
+}

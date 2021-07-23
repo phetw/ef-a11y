@@ -1,0 +1,79 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-collapse",
+      "description": "Allows users to hide non-critical information\nor areas of the screen, maximizing the amount of real estate\nfor their primary displays.",
+      "attributes": [
+        {
+          "name": "header",
+          "description": "Set text on the header",
+          "type": "string | null"
+        },
+        {
+          "name": "level",
+          "description": "Use level styling from theme",
+          "type": "\"1\" | \"2\" | \"3\"",
+          "default": "\"3\""
+        },
+        {
+          "name": "expanded",
+          "description": "Set to expand the item",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "spacing",
+          "description": "Set to apply padding from theme to content section",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "header",
+          "attribute": "header",
+          "description": "Set text on the header",
+          "type": "string | null"
+        },
+        {
+          "name": "level",
+          "attribute": "level",
+          "description": "Use level styling from theme",
+          "type": "\"1\" | \"2\" | \"3\"",
+          "default": "\"3\""
+        },
+        {
+          "name": "expanded",
+          "attribute": "expanded",
+          "description": "Set to expand the item",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "spacing",
+          "attribute": "spacing",
+          "description": "Set to apply padding from theme to content section",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "events": [
+        {
+          "name": "expanded-changed",
+          "description": "Fired when the `expanded` property changes."
+        }
+      ],
+      "slots": [
+        {
+          "name": "header-left",
+          "description": "Slot to add custom contents to the left side of header e.g. ef-icon, ef-checkbox"
+        },
+        {
+          "name": "header-right",
+          "description": "Slot to add custom contents to the right side of header e.g. ef-icon, ef-checkbox"
+        }
+      ]
+    }
+  ]
+}

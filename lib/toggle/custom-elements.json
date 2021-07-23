@@ -1,0 +1,84 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-toggle",
+      "description": "Form control that can toggle between 2 states",
+      "attributes": [
+        {
+          "name": "checked-label",
+          "description": "Label of toggle checked",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "description": "Label of toggle",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "checked",
+          "description": "Value of toggle",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "readonly",
+          "description": "Set readonly state",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "checkedLabel",
+          "attribute": "checked-label",
+          "description": "Label of toggle checked",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "description": "Label of toggle",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "checked",
+          "attribute": "checked",
+          "description": "Value of toggle",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "readonly",
+          "attribute": "readonly",
+          "description": "Set readonly state",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "events": [
+        {
+          "name": "checked-changed",
+          "description": "Fired when the `checked` property changes."
+        }
+      ]
+    }
+  ]
+}

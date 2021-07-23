@@ -1,0 +1,199 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-calendar",
+      "description": "Standard calendar element",
+      "attributes": [
+        {
+          "name": "min",
+          "description": "Set minimum date",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "max",
+          "description": "Set maximum date",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "weekdays-only",
+          "description": "Only enable weekdays",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "weekends-only",
+          "description": "Only enable weekends",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "view",
+          "description": "Current calendar view date",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "first-day-of-week",
+          "description": "Set the first day of the week.\n0 - for Sunday, 6 - for Saturday",
+          "type": "number | null"
+        },
+        {
+          "name": "range",
+          "description": "Set to switch to range select mode",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "multiple",
+          "description": "Set to switch to multiple select mode",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "description": "Current date time value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "values",
+          "description": "Set multiple selected values",
+          "type": "string[]"
+        },
+        {
+          "name": "fill-cells",
+          "description": "Fill head and tail cell dates",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "readonly",
+          "description": "Set readonly state",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "min",
+          "attribute": "min",
+          "description": "Set minimum date",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "max",
+          "attribute": "max",
+          "description": "Set maximum date",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "weekdaysOnly",
+          "attribute": "weekdays-only",
+          "description": "Only enable weekdays",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "weekendsOnly",
+          "attribute": "weekends-only",
+          "description": "Only enable weekends",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "filter",
+          "description": "Custom filter, used for enabling/disabling certain dates",
+          "type": "CalendarFilter | null"
+        },
+        {
+          "name": "view",
+          "attribute": "view",
+          "description": "Current calendar view date",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "firstDayOfWeek",
+          "attribute": "first-day-of-week",
+          "description": "Set the first day of the week.\n0 - for Sunday, 6 - for Saturday",
+          "type": "number | null"
+        },
+        {
+          "name": "range",
+          "attribute": "range",
+          "description": "Set to switch to range select mode",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "multiple",
+          "attribute": "multiple",
+          "description": "Set to switch to multiple select mode",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "Current date time value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "values",
+          "attribute": "values",
+          "description": "Set multiple selected values",
+          "type": "string[]"
+        },
+        {
+          "name": "fillCells",
+          "attribute": "fill-cells",
+          "description": "Fill head and tail cell dates",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "readonly",
+          "attribute": "readonly",
+          "description": "Set readonly state",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "events": [
+        {
+          "name": "value-changed",
+          "description": "Fired when the `value` changes."
+        },
+        {
+          "name": "view-changed",
+          "description": "Fired when the `view` changes."
+        }
+      ],
+      "slots": [
+        {
+          "name": "footer",
+          "description": "Adds slotted content into the footer of the calendar control"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-overlay-menu",
+      "description": "Overlay that supports single-level and multi-level menus",
+      "attributes": [
+        {
+          "name": "compact",
+          "description": "Switch to compact style menu",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "opened",
+          "description": "True if the menu is currently displayed",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "value",
+          "description": "Returns the first selected item value.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "with-backdrop",
+          "description": "True to show backdrop",
+          "type": "boolean"
+        },
+        {
+          "name": "no-cancel-on-esc-key",
+          "description": "Set to true to disable canceling the overlay with the ESC key",
+          "type": "boolean"
+        },
+        {
+          "name": "no-cancel-on-outside-click",
+          "description": "Set to true to disable canceling the overlay by clicking outside it",
+          "type": "boolean"
+        },
+        {
+          "name": "lock-position-target",
+          "description": "Set to true to lock position target",
+          "type": "boolean"
+        },
+        {
+          "name": "transition-style",
+          "description": "Set the transition style",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "compact",
+          "attribute": "compact",
+          "description": "Switch to compact style menu",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "values",
+          "description": "Array of item's values",
+          "type": "string[]"
+        },
+        {
+          "name": "data",
+          "description": "Construct the menu from data object.\nCannot be used with internal content"
+        },
+        {
+          "name": "opened",
+          "attribute": "opened",
+          "description": "True if the menu is currently displayed",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "withBackdrop",
+          "description": "True to show backdrop",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "noCancelOnEscKey",
+          "description": "Set to true to disable canceling the overlay with the ESC key",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "noCancelOnOutsideClick",
+          "description": "Set to true to disable canceling the overlay by clicking outside it",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "lockPositionTarget",
+          "description": "Set to true to lock position target",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "positionTarget",
+          "description": "Position next to the HTML element",
+          "type": "HTMLElement|null",
+          "default": "\"null\""
+        },
+        {
+          "name": "transitionStyle",
+          "description": "Set the transition style",
+          "type": "string|null",
+          "default": "\"null\""
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "Returns the first selected item value.",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "events": [
+        {
+          "name": "item-trigger",
+          "description": "Dispatched when user clicks on item"
+        },
+        {
+          "name": "opened-changed",
+          "description": "Dispatched when when opened attribute changes internally. Prevent default to stop opening/closing pipeline"
+        }
+      ]
+    }
+  ]
+}

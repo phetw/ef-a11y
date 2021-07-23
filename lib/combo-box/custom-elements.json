@@ -1,0 +1,207 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-combo-box",
+      "description": "Combines a popup with a filterable selection list",
+      "attributes": [
+        {
+          "name": "multiple",
+          "description": "Multiple selection mode",
+          "type": "boolean"
+        },
+        {
+          "name": "opened",
+          "description": "Track opened state of popup",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "placeholder",
+          "description": "Placeholder for input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "clears",
+          "description": "Show clears button",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "free-text",
+          "description": "Allow to enter any value",
+          "type": "boolean"
+        },
+        {
+          "name": "error",
+          "description": "Set state to error",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "warning",
+          "description": "Set state to warning",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "query-debounce-rate",
+          "description": "Control query rate, defaults to 0",
+          "type": "number"
+        },
+        {
+          "name": "value",
+          "description": "Returns the first selected item value.\nUse `values` when multiple selection mode is enabled.",
+          "type": "string"
+        },
+        {
+          "name": "readonly",
+          "description": "Set readonly state",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "name",
+          "description": "Set name of the element",
+          "type": "string",
+          "default": "\"''\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "filter",
+          "description": "Custom filter for static data\nSet this to null when data is filtered externally, eg XHR",
+          "type": "ComboBoxFilter<T> | null",
+          "default": "\"defaultFilter<T>(this)\""
+        },
+        {
+          "name": "renderer",
+          "description": "Renderer used to render list item elements",
+          "type": "ComboBoxRenderer",
+          "default": "\"new ComboBoxRenderer(this)\""
+        },
+        {
+          "name": "multiple",
+          "attribute": "multiple",
+          "description": "Multiple selection mode",
+          "type": "boolean"
+        },
+        {
+          "name": "opened",
+          "attribute": "opened",
+          "description": "Track opened state of popup",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "placeholder",
+          "attribute": "placeholder",
+          "description": "Placeholder for input field",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "clears",
+          "attribute": "clears",
+          "description": "Show clears button",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "freeText",
+          "attribute": "free-text",
+          "description": "Allow to enter any value",
+          "type": "boolean"
+        },
+        {
+          "name": "error",
+          "attribute": "error",
+          "description": "Set state to error",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "warning",
+          "attribute": "warning",
+          "description": "Set state to warning",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "queryDebounceRate",
+          "attribute": "query-debounce-rate",
+          "description": "Control query rate, defaults to 0",
+          "type": "number"
+        },
+        {
+          "name": "data",
+          "description": "Data array to be displayed",
+          "type": "ComboBoxData<T>"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "Returns the first selected item value.\nUse `values` when multiple selection mode is enabled.",
+          "type": "string"
+        },
+        {
+          "name": "values",
+          "description": "Returns a values collection of the currently\nselected item values",
+          "type": "string[]"
+        },
+        {
+          "name": "query",
+          "description": "Query string applied to combo-box\nSet via internal text-field input",
+          "type": "string | null"
+        },
+        {
+          "name": "label",
+          "description": "Label of selected value",
+          "type": "string"
+        },
+        {
+          "name": "readonly",
+          "attribute": "readonly",
+          "description": "Set readonly state",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "name",
+          "attribute": "name",
+          "description": "Set name of the element",
+          "type": "string",
+          "default": "\"''\""
+        }
+      ],
+      "events": [
+        {
+          "name": "value-changed",
+          "description": "Dispatched when value changes"
+        },
+        {
+          "name": "query-changed",
+          "description": "Dispatched when query changes"
+        },
+        {
+          "name": "opened-changed",
+          "description": "Dispatched when opened state changes"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-flag",
+      "description": "Provides a collection of flags.",
+      "attributes": [
+        {
+          "name": "flag",
+          "description": "Name of a known flag to render.",
+          "type": "string | null"
+        },
+        {
+          "name": "src",
+          "description": "Src location of an svg flag.",
+          "type": "string | null"
+        }
+      ],
+      "properties": [
+        {
+          "name": "flag",
+          "attribute": "flag",
+          "description": "Name of a known flag to render.",
+          "type": "string | null"
+        },
+        {
+          "name": "src",
+          "attribute": "src",
+          "description": "Src location of an svg flag.",
+          "type": "string | null"
+        }
+      ]
+    }
+  ]
+}

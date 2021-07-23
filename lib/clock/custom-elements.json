@@ -1,0 +1,108 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-clock",
+      "description": "Display hours, minutes and seconds as clock interface",
+      "attributes": [
+        {
+          "name": "value",
+          "description": "Get time value in format `hh:mm:ss`",
+          "type": "string"
+        },
+        {
+          "name": "offset",
+          "description": "Get offset value",
+          "type": "number"
+        },
+        {
+          "name": "tick",
+          "description": "Toggles clock ticking function.",
+          "type": "boolean"
+        },
+        {
+          "name": "am-pm",
+          "description": "Display the digital clock in 12hr format.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "show-seconds",
+          "description": "Display the seconds segment.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "interactive",
+          "description": "Enabled interactive mode. Allowing the user to offset the value.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "analogue",
+          "description": "Display clock in analogue style.",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "Get time value in format `hh:mm:ss`",
+          "type": "string"
+        },
+        {
+          "name": "offset",
+          "attribute": "offset",
+          "description": "Get offset value",
+          "type": "number"
+        },
+        {
+          "name": "tick",
+          "attribute": "tick",
+          "description": "Toggles clock ticking function.",
+          "type": "boolean"
+        },
+        {
+          "name": "amPm",
+          "attribute": "am-pm",
+          "description": "Display the digital clock in 12hr format.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "showSeconds",
+          "attribute": "show-seconds",
+          "description": "Display the seconds segment.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "interactive",
+          "attribute": "interactive",
+          "description": "Enabled interactive mode. Allowing the user to offset the value.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "analogue",
+          "attribute": "analogue",
+          "description": "Display clock in analogue style.",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "events": [
+        {
+          "name": "value-changed",
+          "description": "Fired when the value property changes while ticking."
+        },
+        {
+          "name": "offset-changed",
+          "description": "Fired when the the user offsets the clock in `interactive` mode."
+        }
+      ]
+    }
+  ]
+}

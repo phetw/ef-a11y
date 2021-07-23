@@ -1,0 +1,181 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-slider",
+      "description": "Allows users to make selections from a range of values",
+      "attributes": [
+        {
+          "name": "step",
+          "description": "Specified size of increment or decrement jump between value.",
+          "type": "string",
+          "default": "\"1\""
+        },
+        {
+          "name": "min",
+          "description": "Set minimum value of slider.",
+          "type": "string",
+          "default": "\"0\""
+        },
+        {
+          "name": "max",
+          "description": "Slider maximum value of slider.",
+          "type": "string",
+          "default": "\"100\""
+        },
+        {
+          "name": "from",
+          "description": "Uses with `range`. Low value of slider in range mode.",
+          "type": "string",
+          "default": "\"0\""
+        },
+        {
+          "name": "to",
+          "description": "Uses with `range`. High value of slider in range mode",
+          "type": "string",
+          "default": "\"100\""
+        },
+        {
+          "name": "range",
+          "description": "Set slider to range mode. Instead of a single value, slider will provide `from` and `to`.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "show-steps",
+          "description": "Show steps marker on slider.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "show-input-field",
+          "description": "Show input number field.",
+          "type": "\"\" | \"readonly\" | null"
+        },
+        {
+          "name": "min-range",
+          "description": "Uses with `range`. Set minimum allowance value (distance) between `from` and `to`.",
+          "type": "string",
+          "default": "\"0\""
+        },
+        {
+          "name": "value",
+          "description": "Value of slider. Not applicable in range mode.",
+          "type": "string",
+          "default": "\"0\""
+        },
+        {
+          "name": "readonly",
+          "description": "Set readonly state",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "step",
+          "attribute": "step",
+          "description": "Specified size of increment or decrement jump between value.",
+          "type": "string",
+          "default": "\"1\""
+        },
+        {
+          "name": "min",
+          "attribute": "min",
+          "description": "Set minimum value of slider.",
+          "type": "string",
+          "default": "\"0\""
+        },
+        {
+          "name": "max",
+          "attribute": "max",
+          "description": "Slider maximum value of slider.",
+          "type": "string",
+          "default": "\"100\""
+        },
+        {
+          "name": "from",
+          "attribute": "from",
+          "description": "Uses with `range`. Low value of slider in range mode.",
+          "type": "string",
+          "default": "\"0\""
+        },
+        {
+          "name": "to",
+          "attribute": "to",
+          "description": "Uses with `range`. High value of slider in range mode",
+          "type": "string",
+          "default": "\"100\""
+        },
+        {
+          "name": "range",
+          "attribute": "range",
+          "description": "Set slider to range mode. Instead of a single value, slider will provide `from` and `to`.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "showSteps",
+          "attribute": "show-steps",
+          "description": "Show steps marker on slider.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "showInputField",
+          "attribute": "show-input-field",
+          "description": "Show input number field.",
+          "type": "\"\" | \"readonly\" | null"
+        },
+        {
+          "name": "minRange",
+          "attribute": "min-range",
+          "description": "Uses with `range`. Set minimum allowance value (distance) between `from` and `to`.",
+          "type": "string",
+          "default": "\"0\""
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "Value of slider. Not applicable in range mode.",
+          "type": "string",
+          "default": "\"0\""
+        },
+        {
+          "name": "readonly",
+          "attribute": "readonly",
+          "description": "Set readonly state",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "events": [
+        {
+          "name": "value-changed",
+          "description": "Fired when the `value` changes."
+        },
+        {
+          "name": "from-changed",
+          "description": "Fired when the `from` changes."
+        },
+        {
+          "name": "to-changed",
+          "description": "Fired when the `to` changes."
+        }
+      ]
+    }
+  ]
+}

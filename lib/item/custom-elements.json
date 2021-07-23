@@ -1,0 +1,153 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-item",
+      "description": "Used as a basic building block to compose complex custom elements,\nadditionally it can be used by applications\nto create simple menus or navigation panels.",
+      "attributes": [
+        {
+          "name": "label",
+          "description": "The text for the label indicating the meaning of the item.\nBy having both `label` and content, `label` always takes priority",
+          "type": "string | null"
+        },
+        {
+          "name": "type",
+          "description": "If defined value can be `text`, `header` or `divider`",
+          "type": "ItemType | null"
+        },
+        {
+          "name": "icon",
+          "description": "Set the icon name from the ef-icon list",
+          "type": "string | null"
+        },
+        {
+          "name": "selected",
+          "description": "Indicates that the item is selected",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "multiple",
+          "description": "Is the item part of a multiple selection",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "highlighted",
+          "description": "Highlight the item",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "sub-label",
+          "description": "The`subLabel` property represents the text beneath the label.",
+          "type": "string | null"
+        },
+        {
+          "name": "for",
+          "description": "Specifies which element an item is bound to",
+          "type": "string | null"
+        },
+        {
+          "name": "value",
+          "description": "The content of this attribute represents the value of the item.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "disabled",
+          "description": "Set disabled state.",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "label",
+          "attribute": "label",
+          "description": "The text for the label indicating the meaning of the item.\nBy having both `label` and content, `label` always takes priority",
+          "type": "string | null"
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "description": "If defined value can be `text`, `header` or `divider`",
+          "type": "ItemType | null"
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "description": "Set the icon name from the ef-icon list",
+          "type": "string | null"
+        },
+        {
+          "name": "selected",
+          "attribute": "selected",
+          "description": "Indicates that the item is selected",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "multiple",
+          "attribute": "multiple",
+          "description": "Is the item part of a multiple selection",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "highlighted",
+          "attribute": "highlighted",
+          "description": "Highlight the item",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "subLabel",
+          "attribute": "sub-label",
+          "description": "The`subLabel` property represents the text beneath the label.",
+          "type": "string | null"
+        },
+        {
+          "name": "for",
+          "attribute": "for",
+          "description": "Specifies which element an item is bound to",
+          "type": "string | null"
+        },
+        {
+          "name": "highlightable",
+          "description": "Return true if the item can be highlighted. True if not disabled and type is Text",
+          "type": "boolean"
+        },
+        {
+          "name": "isTruncated",
+          "description": "Getter returning if the label is truncated",
+          "type": "boolean"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "The content of this attribute represents the value of the item.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Set disabled state.",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "left",
+          "description": "Used to render the content on the left of the label."
+        },
+        {
+          "name": "right",
+          "description": "Used to render the content on the right of the label."
+        }
+      ]
+    }
+  ]
+}

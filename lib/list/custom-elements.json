@@ -1,0 +1,105 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-list",
+      "description": "Provides listing and immutable selection",
+      "attributes": [
+        {
+          "name": "stateless",
+          "description": "Disable selections",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "multiple",
+          "description": "Allow multiple selections",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "description": "Returns the first selected item value.\nUse `values` when multiple selection mode is enabled.",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "delegatesFocus",
+          "description": "Element focus delegation.\nSet to `false` and relies on native focusing.",
+          "type": "false",
+          "default": "false"
+        },
+        {
+          "name": "renderer",
+          "description": "Renderer used to render list item elements",
+          "type": "ListRenderer",
+          "default": "\"new ListRenderer(this)\""
+        },
+        {
+          "name": "stateless",
+          "attribute": "stateless",
+          "description": "Disable selections",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "multiple",
+          "attribute": "multiple",
+          "description": "Allow multiple selections",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "data",
+          "description": "The data object, used to render the list.",
+          "type": "ListData"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "Returns the first selected item value.\nUse `values` when multiple selection mode is enabled.",
+          "type": "string"
+        },
+        {
+          "name": "values",
+          "description": "Returns a values collection of the currently\nselected item values",
+          "type": "object"
+        }
+      ],
+      "methods": [
+        {
+          "name": "selectItem",
+          "description": "Selects an item in the list",
+          "params": [
+            {
+              "name": "item",
+              "description": "Data Item or Item Element"
+            }
+          ]
+        },
+        {
+          "name": "up",
+          "description": "Navigate up through the list items",
+          "params": []
+        },
+        {
+          "name": "down",
+          "description": "Navigate up through the list items",
+          "params": []
+        },
+        {
+          "name": "scrollToItem",
+          "description": "Scroll to list item element",
+          "params": [
+            {
+              "name": "item",
+              "description": "Data item to scroll to",
+              "type": "T"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

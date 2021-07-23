@@ -1,0 +1,138 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-heatmap",
+      "description": "A graphical representation of data where the individual\nvalues contained in a matrix are represented as colors",
+      "attributes": [
+        {
+          "name": "config",
+          "description": "Heatmap configuration options.",
+          "type": "HeatmapConfig"
+        },
+        {
+          "name": "label-width",
+          "description": "Number of maximum label width that cell can paint in pixel.\ne.g. label-width: 30px; cell label hides when text length reaches 30px.",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "label-hidden",
+          "description": "Hide all labels in the cells",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "axis-hidden",
+          "description": "Hide all axes",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "min-point",
+          "description": "Minimum point of the cell coloring",
+          "type": "number",
+          "default": "-1"
+        },
+        {
+          "name": "mid-point",
+          "description": "Middle point of the cell coloring",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "max-point",
+          "description": "Maximum point of the cell coloring",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "blend",
+          "description": "Enable cell color blending",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "saturation",
+          "description": "Cell minimum color saturation, value can be from 0 - 1",
+          "type": "number",
+          "default": "0.4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "config",
+          "attribute": "config",
+          "description": "Heatmap configuration options.",
+          "type": "HeatmapConfig"
+        },
+        {
+          "name": "labelWidth",
+          "attribute": "label-width",
+          "description": "Number of maximum label width that cell can paint in pixel.\ne.g. label-width: 30px; cell label hides when text length reaches 30px.",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "labelHidden",
+          "attribute": "label-hidden",
+          "description": "Hide all labels in the cells",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "axisHidden",
+          "attribute": "axis-hidden",
+          "description": "Hide all axes",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "minPoint",
+          "attribute": "min-point",
+          "description": "Minimum point of the cell coloring",
+          "type": "number",
+          "default": "-1"
+        },
+        {
+          "name": "midPoint",
+          "attribute": "mid-point",
+          "description": "Middle point of the cell coloring",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "maxPoint",
+          "attribute": "max-point",
+          "description": "Maximum point of the cell coloring",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "blend",
+          "attribute": "blend",
+          "description": "Enable cell color blending",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "saturation",
+          "attribute": "saturation",
+          "description": "Cell minimum color saturation, value can be from 0 - 1",
+          "type": "number",
+          "default": "0.4"
+        },
+        {
+          "name": "tooltipCallback",
+          "description": "A callback function that allows tooltip rendering on cell hover",
+          "type": "HeatmapTooltipCallback"
+        },
+        {
+          "name": "renderCallback",
+          "description": "Render callback function use for custom cell properties.\nAccepts custom label, foreground and background color",
+          "type": "HeatmapRenderCallback"
+        }
+      ]
+    }
+  ]
+}

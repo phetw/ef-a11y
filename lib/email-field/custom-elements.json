@@ -1,0 +1,199 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-email-field",
+      "description": "A form control element for email",
+      "attributes": [
+        {
+          "name": "pattern",
+          "description": "Set regular expression for input validation",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeholder",
+          "description": "Set placeholder text",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "error",
+          "description": "Set state to error",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "warning",
+          "description": "Set state to warning",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "transparent",
+          "description": "Disables all other states and border/background styles.\nUse with advanced composite elements requiring e.g. multi selection in\ncombo-box when parent container handles element states.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "maxlength",
+          "description": "Set character max limit",
+          "type": "number | null"
+        },
+        {
+          "name": "minlength",
+          "description": "Set character min limit",
+          "type": "number | null"
+        },
+        {
+          "name": "multiple",
+          "description": "Set to multiple mode, allows multiple emails in a single input",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "icon",
+          "description": "Specify icon to display in input. Value can be icon name",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon-has-action",
+          "description": "Specify when icon need to be clickable",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "description": "Input's value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "readonly",
+          "description": "Set readonly state",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "pattern",
+          "attribute": "pattern",
+          "description": "Set regular expression for input validation",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeholder",
+          "attribute": "placeholder",
+          "description": "Set placeholder text",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "error",
+          "attribute": "error",
+          "description": "Set state to error",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "warning",
+          "attribute": "warning",
+          "description": "Set state to warning",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "transparent",
+          "attribute": "transparent",
+          "description": "Disables all other states and border/background styles.\nUse with advanced composite elements requiring e.g. multi selection in\ncombo-box when parent container handles element states.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "maxLength",
+          "attribute": "maxlength",
+          "description": "Set character max limit",
+          "type": "number | null"
+        },
+        {
+          "name": "minLength",
+          "attribute": "minlength",
+          "description": "Set character min limit",
+          "type": "number | null"
+        },
+        {
+          "name": "multiple",
+          "attribute": "multiple",
+          "description": "Set to multiple mode, allows multiple emails in a single input",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "description": "Specify icon to display in input. Value can be icon name",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "iconHasAction",
+          "attribute": "icon-has-action",
+          "description": "Specify when icon need to be clickable",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "Input's value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "readonly",
+          "attribute": "readonly",
+          "description": "Set readonly state",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "events": [
+        {
+          "name": "value-changed",
+          "description": "Dispatched when value changes"
+        },
+        {
+          "name": "error-changed",
+          "description": "Dispatched when error state changes"
+        },
+        {
+          "name": "icon-click",
+          "description": "Dispatched only when element has icon-has-action attribute and icon is clicked"
+        }
+      ],
+      "methods": [
+        {
+          "name": "select",
+          "description": "Select the contents of input",
+          "params": []
+        }
+      ]
+    }
+  ]
+}

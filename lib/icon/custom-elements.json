@@ -1,0 +1,34 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-icon",
+      "attributes": [
+        {
+          "name": "icon",
+          "description": "Name of a known icon to render.",
+          "type": "string | null"
+        },
+        {
+          "name": "src",
+          "description": "Src location of an svg icon.",
+          "type": "string | null"
+        }
+      ],
+      "properties": [
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "description": "Name of a known icon to render.",
+          "type": "string | null"
+        },
+        {
+          "name": "src",
+          "attribute": "src",
+          "description": "Src location of an svg icon.",
+          "type": "string | null"
+        }
+      ]
+    }
+  ]
+}

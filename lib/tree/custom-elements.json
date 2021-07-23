@@ -1,0 +1,86 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-tree",
+      "description": "Displays a tree structure\nto be used for menus and group selections",
+      "attributes": [
+        {
+          "name": "multiple",
+          "description": "Allows multiple items to be selected",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "no-relation",
+          "description": "Breaks the relationship when multiple\nselection mode is enabled",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "multiple",
+          "attribute": "multiple",
+          "description": "Allows multiple items to be selected",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "noRelation",
+          "attribute": "no-relation",
+          "description": "Breaks the relationship when multiple\nselection mode is enabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "renderer",
+          "description": "Renderer used for generating tree items",
+          "type": "TreeRenderer",
+          "default": "\"new TreeRenderer(this)\""
+        },
+        {
+          "name": "values",
+          "description": "Selected items in tree",
+          "type": "string[]"
+        },
+        {
+          "name": "data",
+          "description": "Data object to be used for creating tree",
+          "type": "TreeData<T>"
+        }
+      ],
+      "events": [
+        {
+          "name": "value-changed",
+          "description": "Fired when the users changed selection item."
+        },
+        {
+          "name": "expanded-changed"
+        }
+      ],
+      "methods": [
+        {
+          "name": "expandAll",
+          "description": "Expands all groups",
+          "params": []
+        },
+        {
+          "name": "collapseAll",
+          "description": "Collapses all groups",
+          "params": []
+        },
+        {
+          "name": "checkAll",
+          "description": "Checks all editable items",
+          "params": []
+        },
+        {
+          "name": "uncheckAll",
+          "description": "Unchecks all editable items",
+          "params": []
+        }
+      ]
+    }
+  ]
+}

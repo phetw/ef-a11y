@@ -1,0 +1,58 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-tab-bar",
+      "description": "Container for tabs",
+      "attributes": [
+        {
+          "name": "alignment",
+          "description": "Specify tab's horizontal alignment",
+          "type": "\"left\" | \"center\" | \"right\"",
+          "default": "\"left\""
+        },
+        {
+          "name": "level",
+          "description": "Use level styling from theme",
+          "type": "\"1\" | \"2\" | \"3\"",
+          "default": "\"1\""
+        },
+        {
+          "name": "vertical",
+          "description": "Use to switch from horizontal to vertical layout.",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "alignment",
+          "attribute": "alignment",
+          "description": "Specify tab's horizontal alignment",
+          "type": "\"left\" | \"center\" | \"right\"",
+          "default": "\"left\""
+        },
+        {
+          "name": "level",
+          "attribute": "level",
+          "description": "Use level styling from theme",
+          "type": "\"1\" | \"2\" | \"3\"",
+          "default": "\"1\""
+        },
+        {
+          "name": "vertical",
+          "attribute": "vertical",
+          "description": "Use to switch from horizontal to vertical layout.",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "events": [
+        {
+          "name": "resize",
+          "description": "Resize fired when the element's size changes."
+        }
+      ]
+    }
+  ]
+}

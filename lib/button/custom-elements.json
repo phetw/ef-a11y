@@ -1,0 +1,119 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-button",
+      "description": "Use button for actions in forms, dialogs,\nand more with support for different states and styles.",
+      "attributes": [
+        {
+          "name": "textpos",
+          "description": "Customises text alignment when specified alongside `icon` property\nValue can be `before` or `after`",
+          "type": "\"before\" | \"after\"",
+          "default": "\"after\""
+        },
+        {
+          "name": "transparent",
+          "description": "Removes background when specified alongside `icon` property",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "icon",
+          "description": "Specify icon to display in button. Value can be icon name",
+          "type": "string | null"
+        },
+        {
+          "name": "hover-icon",
+          "description": "Specify icon to display when hovering. Value can be icon name",
+          "type": "string | null"
+        },
+        {
+          "name": "cta",
+          "description": "Set state to call-to-action",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "toggles",
+          "description": "Enable or disable ability to be toggled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "active",
+          "description": "An active or inactive state, can only be used with toggles property/attribute",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabled",
+          "description": "Set state to disabled",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "textpos",
+          "attribute": "textpos",
+          "description": "Customises text alignment when specified alongside `icon` property\nValue can be `before` or `after`",
+          "type": "\"before\" | \"after\"",
+          "default": "\"after\""
+        },
+        {
+          "name": "transparent",
+          "attribute": "transparent",
+          "description": "Removes background when specified alongside `icon` property",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "description": "Specify icon to display in button. Value can be icon name",
+          "type": "string | null"
+        },
+        {
+          "name": "hoverIcon",
+          "attribute": "hover-icon",
+          "description": "Specify icon to display when hovering. Value can be icon name",
+          "type": "string | null"
+        },
+        {
+          "name": "cta",
+          "attribute": "cta",
+          "description": "Set state to call-to-action",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "toggles",
+          "attribute": "toggles",
+          "description": "Enable or disable ability to be toggled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "active",
+          "attribute": "active",
+          "description": "An active or inactive state, can only be used with toggles property/attribute",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Set state to disabled",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "events": [
+        {
+          "name": "active-changed",
+          "description": "Fired on changing `active` property state by taping on button when property `toggles` is true.\nProvides new state of `active` property in detail.value field"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-time-picker",
+      "description": "Control the time input",
+      "attributes": [
+        {
+          "name": "hours",
+          "description": "Hours time segment in 24hr format",
+          "type": "number | null"
+        },
+        {
+          "name": "minutes",
+          "description": "Minutes time segment",
+          "type": "number | null"
+        },
+        {
+          "name": "seconds",
+          "description": "Seconds time segment",
+          "type": "number | null"
+        },
+        {
+          "name": "am-pm",
+          "description": "Toggles 12hr time display",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "show-seconds",
+          "description": "Flag to show seconds time segment in display.\nSeconds are automatically shown when `hh:mm:ss` time format is provided as a value.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "description": "Value of the element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "readonly",
+          "description": "Set readonly state",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "hours",
+          "attribute": "hours",
+          "description": "Hours time segment in 24hr format",
+          "type": "number | null"
+        },
+        {
+          "name": "minutes",
+          "attribute": "minutes",
+          "description": "Minutes time segment",
+          "type": "number | null"
+        },
+        {
+          "name": "seconds",
+          "attribute": "seconds",
+          "description": "Seconds time segment",
+          "type": "number | null"
+        },
+        {
+          "name": "amPm",
+          "attribute": "am-pm",
+          "description": "Toggles 12hr time display",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "showSeconds",
+          "attribute": "show-seconds",
+          "description": "Flag to show seconds time segment in display.\nSeconds are automatically shown when `hh:mm:ss` time format is provided as a value.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "Value of the element",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "readonly",
+          "attribute": "readonly",
+          "description": "Set readonly state",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "events": [
+        {
+          "name": "value-changed",
+          "description": "Dispatched when value changes"
+        }
+      ],
+      "methods": [
+        {
+          "name": "toggle",
+          "description": "Toggles the AM/PM state",
+          "params": []
+        }
+      ]
+    }
+  ]
+}

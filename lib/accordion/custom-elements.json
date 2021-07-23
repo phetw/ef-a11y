@@ -1,0 +1,62 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-accordion",
+      "description": "Used to display a group of `Collapse` control.\nOnly one item will be able to expand by default but you can customize its behavior.",
+      "attributes": [
+        {
+          "name": "auto-collapse-disabled",
+          "description": "Allow multiple sections expand at the same time",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "spacing",
+          "description": "Add spacing to content section in all collapse items",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "collapse-animation-disabled",
+          "description": "Allow the collapse animation to be disabled",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "autoCollapseDisabled",
+          "attribute": "auto-collapse-disabled",
+          "description": "Allow multiple sections expand at the same time",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "spacing",
+          "attribute": "spacing",
+          "description": "Add spacing to content section in all collapse items",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "collapseAnimationDisabled",
+          "attribute": "collapse-animation-disabled",
+          "description": "Allow the collapse animation to be disabled",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "slots": [
+        {
+          "name": "header-left",
+          "description": "Slot to add custom contents to the left side of header e.g. ef-icon, ef-checkbox"
+        },
+        {
+          "name": "header-right",
+          "description": "Slot to add custom contents to the right side of header e.g. ef-icon, ef-checkbox"
+        }
+      ]
+    }
+  ]
+}

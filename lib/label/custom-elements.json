@@ -1,0 +1,61 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-label",
+      "description": "Displays a text with alternative truncation",
+      "attributes": [
+        {
+          "name": "truncate",
+          "description": "Enable shortening the slot content",
+          "type": "\"\" | \"center\" | null | undefined"
+        },
+        {
+          "name": "max-line",
+          "description": "Limit the number of lines before truncating",
+          "type": "null"
+        },
+        {
+          "name": "error",
+          "description": "Set state to error",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "warning",
+          "description": "Set state to warning",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "truncate",
+          "attribute": "truncate",
+          "description": "Enable shortening the slot content",
+          "type": "\"\" | \"center\" | null | undefined"
+        },
+        {
+          "name": "maxLine",
+          "attribute": "max-line",
+          "description": "Limit the number of lines before truncating",
+          "type": "null"
+        },
+        {
+          "name": "error",
+          "attribute": "error",
+          "description": "Set state to error",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "warning",
+          "attribute": "warning",
+          "description": "Set state to warning",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
+    }
+  ]
+}

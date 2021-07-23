@@ -1,0 +1,82 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-swing-gauge",
+      "description": "Data visualisation showing the percentage between two values",
+      "attributes": [
+        {
+          "name": "primary-value",
+          "description": "Set the primary value",
+          "type": "number",
+          "default": "\"50\""
+        },
+        {
+          "name": "primary-label",
+          "description": "Set the primary label",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "secondary-value",
+          "description": "Set the secondary value",
+          "type": "number",
+          "default": "\"50\""
+        },
+        {
+          "name": "secondary-label",
+          "description": "Set the secondary label",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "duration",
+          "description": "Sets the animation duration in milliseconds",
+          "type": "number",
+          "default": "\"1000\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "primaryValue",
+          "attribute": "primary-value",
+          "description": "Set the primary value",
+          "type": "number",
+          "default": "\"50\""
+        },
+        {
+          "name": "primaryLabel",
+          "attribute": "primary-label",
+          "description": "Set the primary label",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "secondaryValue",
+          "attribute": "secondary-value",
+          "description": "Set the secondary value",
+          "type": "number",
+          "default": "\"50\""
+        },
+        {
+          "name": "secondaryLabel",
+          "attribute": "secondary-label",
+          "description": "Set the secondary label",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "duration",
+          "attribute": "duration",
+          "description": "Sets the animation duration in milliseconds",
+          "type": "number",
+          "default": "\"1000\""
+        },
+        {
+          "name": "canvasSize",
+          "description": "Getter size of component"
+        }
+      ]
+    }
+  ]
+}

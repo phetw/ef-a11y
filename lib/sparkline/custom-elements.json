@@ -1,0 +1,59 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-sparkline",
+      "attributes": [
+        {
+          "name": "data",
+          "description": "Chart data as an array of number.",
+          "type": "object",
+          "default": "[]"
+        },
+        {
+          "name": "previous-data",
+          "description": "Chart previous data as an array of number.",
+          "type": "object",
+          "default": "[]"
+        },
+        {
+          "name": "reference-value",
+          "description": "Baseline value to show horizontal line (optional)",
+          "type": "number | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "data",
+          "attribute": "data",
+          "description": "Chart data as an array of number.",
+          "type": "object",
+          "default": "[]"
+        },
+        {
+          "name": "previousData",
+          "attribute": "previous-data",
+          "description": "Chart previous data as an array of number.",
+          "type": "object",
+          "default": "[]"
+        },
+        {
+          "name": "referenceValue",
+          "attribute": "reference-value",
+          "description": "Baseline value to show horizontal line (optional)",
+          "type": "number | undefined"
+        }
+      ],
+      "events": [
+        {
+          "name": "data-error",
+          "description": "Fired when data has error and chart cannot be updated"
+        },
+        {
+          "name": "data-changed",
+          "description": "Fired when data is changed"
+        }
+      ]
+    }
+  ]
+}

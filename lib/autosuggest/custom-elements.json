@@ -1,0 +1,223 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-autosuggest",
+      "description": "Shows suggestions based on users' query.\nIt can be used by attaching to text form control\nsuch as TextField, Multi Input, etc.\nAutosuggest supports various use cases such as\ncustom rendering, pagination, asynchronous data request, etc.",
+      "attributes": [
+        {
+          "name": "attach",
+          "description": "An HTML Element or CSS selector",
+          "type": "AutosuggestTargetElement | string | null"
+        },
+        {
+          "name": "request-on-focus",
+          "description": "Request suggestions when attach target is focused",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "more-results",
+          "description": "If set to true display 'Has more results' item",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "more-search-text",
+          "description": "Custom text for More Search",
+          "type": "string",
+          "default": "\"defaultMoreSearchText\""
+        },
+        {
+          "name": "loading",
+          "description": "If set to true show loading mask",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "debounce-rate",
+          "description": "Debounce rate in ms of the filter as a number.\nUsed to throttle the filter rate so as not to trigger unneeded filtering",
+          "type": "number",
+          "default": "\"100\""
+        },
+        {
+          "name": "html-renderer",
+          "description": "If set to true, the render function is not called. Instead the wrapper element\nshould populate and destroy suggestion elements. Rendering items manually\nmay have performance benefits in frameworks that use virtual DOM (such as `Vue`, `React`, `hyperHTML` and others)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "opened",
+          "description": "Auto suggest popup's open state",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "attach",
+          "attribute": "attach",
+          "description": "An HTML Element or CSS selector",
+          "type": "AutosuggestTargetElement | string | null"
+        },
+        {
+          "name": "requestOnFocus",
+          "attribute": "request-on-focus",
+          "description": "Request suggestions when attach target is focused",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "moreResults",
+          "attribute": "more-results",
+          "description": "If set to true display 'Has more results' item",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "moreSearchText",
+          "attribute": "more-search-text",
+          "description": "Custom text for More Search",
+          "type": "string",
+          "default": "\"defaultMoreSearchText\""
+        },
+        {
+          "name": "loading",
+          "attribute": "loading",
+          "description": "If set to true show loading mask",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "query",
+          "description": "An object that represents a query from attach target",
+          "type": "AutosuggestQuery | null"
+        },
+        {
+          "name": "debounceRate",
+          "attribute": "debounce-rate",
+          "description": "Debounce rate in ms of the filter as a number.\nUsed to throttle the filter rate so as not to trigger unneeded filtering",
+          "type": "number",
+          "default": "\"100\""
+        },
+        {
+          "name": "renderer",
+          "description": "A renderer applied to suggestion.\nBy default a render maps data to item attributes",
+          "type": "AutosuggestRenderer",
+          "default": "\"itemRenderer\""
+        },
+        {
+          "name": "highlightable",
+          "description": "A function that is applied to every suggestion during the render process\nto say whether the item can be highlighted and selected. Only items that return true are considered.\nBy default the function checks for `item` `highlightable` property.",
+          "type": "AutosuggestHighlightable",
+          "default": "\"itemHighlightable\""
+        },
+        {
+          "name": "suggestions",
+          "description": "A list of suggestion items",
+          "type": "AutosuggestItem[]",
+          "default": "[]"
+        },
+        {
+          "name": "htmlRenderer",
+          "attribute": "html-renderer",
+          "description": "If set to true, the render function is not called. Instead the wrapper element\nshould populate and destroy suggestion elements. Rendering items manually\nmay have performance benefits in frameworks that use virtual DOM (such as `Vue`, `React`, `hyperHTML` and others)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "opened",
+          "attribute": "opened",
+          "description": "Auto suggest popup's open state",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "events": [
+        {
+          "name": "item-highlight",
+          "description": "Fired when an item gets highlighted or highlight is removed"
+        },
+        {
+          "name": "add-attach-target-events",
+          "description": "Fired when attach has been set"
+        },
+        {
+          "name": "remove-attach-target-events",
+          "description": "Fired when attach has been removed"
+        },
+        {
+          "name": "item-select",
+          "description": "Fired when an item gets selected"
+        },
+        {
+          "name": "suggestions-fetch-requested",
+          "description": "Fired when auto suggest requests the data"
+        },
+        {
+          "name": "suggestions-clear-requested",
+          "description": "Fired when auto suggest requests to clear the data. If used in reactive application, prevent default and set suggestions to []"
+        },
+        {
+          "name": "suggestions-query",
+          "description": "Fired when input value has changed and the query must be set"
+        },
+        {
+          "name": "suggestions-changed",
+          "description": "Fired when suggestions changed"
+        }
+      ],
+      "methods": [
+        {
+          "name": "onInputValueChange",
+          "description": "Run when attach target value changes.",
+          "params": [
+            {
+              "name": "event",
+              "description": "by default `value-changed` event is listened",
+              "type": "Event"
+            }
+          ]
+        },
+        {
+          "name": "onInputBlur",
+          "description": "Run when input has lost focus",
+          "params": [
+            {
+              "name": "event",
+              "description": "by default `blur` event is listened",
+              "type": "FocusEvent"
+            }
+          ]
+        },
+        {
+          "name": "onInputFocus",
+          "description": "Run when input received focus",
+          "params": [
+            {
+              "name": "event",
+              "description": "by default `focus` event is listened",
+              "type": "FocusEvent"
+            }
+          ]
+        },
+        {
+          "name": "onInputKeyDown",
+          "description": "Run when input key down event has happened",
+          "params": [
+            {
+              "name": "event",
+              "description": "by default `keydown` event is listened",
+              "type": "KeyboardEvent"
+            }
+          ]
+        },
+        {
+          "name": "refit",
+          "description": "Set the width",
+          "params": []
+        }
+      ]
+    }
+  ]
+}

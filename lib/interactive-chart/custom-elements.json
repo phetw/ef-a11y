@@ -1,0 +1,86 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-interactive-chart",
+      "description": "A charting component that allows you to create several use cases of financial chart.\nBy lightweight-charts library.",
+      "attributes": [
+        {
+          "name": "config",
+          "description": "Chart configurations for init chart",
+          "type": "InteractiveChartConfig"
+        },
+        {
+          "name": "disabled-legend",
+          "description": "Hide legend",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabled-jump-button",
+          "description": "Hide jump to latest data button",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "legend-style",
+          "description": "Set legend style i.e. `horizontal`, `vertical`.\nDefault is `vertical`.",
+          "type": "\"vertical\" | \"horizontal\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "config",
+          "attribute": "config",
+          "description": "Chart configurations for init chart",
+          "type": "InteractiveChartConfig"
+        },
+        {
+          "name": "disabledLegend",
+          "attribute": "disabled-legend",
+          "description": "Hide legend",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabledJumpButton",
+          "attribute": "disabled-jump-button",
+          "description": "Hide jump to latest data button",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "legendStyle",
+          "attribute": "legend-style",
+          "description": "Set legend style i.e. `horizontal`, `vertical`.\nDefault is `vertical`.",
+          "type": "\"vertical\" | \"horizontal\""
+        },
+        {
+          "name": "seriesList",
+          "description": "Array of series instances in chart",
+          "type": "object",
+          "default": "[]"
+        }
+      ],
+      "events": [
+        {
+          "name": "initialized",
+          "description": "Fired when chart initialized"
+        }
+      ],
+      "slots": [
+        {
+          "name": "legend",
+          "description": "Slot to use for implementing custom legend."
+        }
+      ],
+      "methods": [
+        {
+          "name": "colors",
+          "description": "List of available chart colors from the theme.",
+          "params": []
+        }
+      ]
+    }
+  ]
+}

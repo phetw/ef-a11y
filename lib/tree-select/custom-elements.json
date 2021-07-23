@@ -1,0 +1,102 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-tree-select",
+      "description": "Dropdown control that allows selection from the tree list",
+      "attributes": [
+        {
+          "name": "no-relation",
+          "description": "Breaks the relationship when multiple\nselection mode is enabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "show-pills",
+          "description": "Should the control show pills",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "opened",
+          "description": "Set dropdown to open",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "placeholder",
+          "description": "Set placeholder text",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "filterCount",
+          "description": "Tracks the number of filter matches\n\nOnly needed if internal filtering is unused",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "noRelation",
+          "attribute": "no-relation",
+          "description": "Breaks the relationship when multiple\nselection mode is enabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "showPills",
+          "attribute": "show-pills",
+          "description": "Should the control show pills",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "values",
+          "description": "Returns a values collection of the currently\nselected item values",
+          "type": "string[]"
+        },
+        {
+          "name": "renderer",
+          "description": "Renderer used to render tree item elements",
+          "type": "TreeSelectRenderer",
+          "default": "\"new TreeSelectRenderer(this)\""
+        },
+        {
+          "name": "opened",
+          "attribute": "opened",
+          "description": "Set dropdown to open",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "placeholder",
+          "attribute": "placeholder",
+          "description": "Set placeholder text",
+          "type": "string"
+        }
+      ],
+      "events": [
+        {
+          "name": "confirm",
+          "description": "Fired when selection is confirmed"
+        },
+        {
+          "name": "cancel",
+          "description": "Fired when selection is cancelled"
+        },
+        {
+          "name": "query-changed",
+          "description": "Fired when query in input box changed"
+        },
+        {
+          "name": "value-changed",
+          "description": "Fired when value of control changed"
+        },
+        {
+          "name": "opened-changed",
+          "description": "Fires when opened state changes"
+        }
+      ]
+    }
+  ]
+}

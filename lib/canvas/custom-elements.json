@@ -1,0 +1,69 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-canvas",
+      "description": "A Component uses\nto draw graphics on a web page,\nit works similarly to the normal HTML5 Canvas element.",
+      "attributes": [
+        {
+          "name": "autoloop",
+          "description": "Starts an automatic animation loop.\nEnabling the frame event.",
+          "type": "boolean"
+        }
+      ],
+      "properties": [
+        {
+          "name": "autoloop",
+          "attribute": "autoloop",
+          "description": "Starts an automatic animation loop.\nEnabling the frame event.",
+          "type": "boolean"
+        },
+        {
+          "name": "canvas",
+          "description": "Html canvas element",
+          "type": "HTMLCanvasElement"
+        },
+        {
+          "name": "ctx",
+          "description": "Alias of context",
+          "type": "CanvasRenderingContext2D | null"
+        },
+        {
+          "name": "context",
+          "description": "The 2 dimensional context of the canvas, used for drawing",
+          "type": "CanvasRenderingContext2D | null"
+        },
+        {
+          "name": "width",
+          "description": "Width of canvas",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "height",
+          "description": "Height of canvas",
+          "type": "number",
+          "default": "0"
+        }
+      ],
+      "events": [
+        {
+          "name": "frame",
+          "description": "Frame fires next frame event when autoloop is set to true."
+        }
+      ],
+      "methods": [
+        {
+          "name": "getContext",
+          "description": "Return context of canvas,\nsupport only 2D mode",
+          "params": [
+            {
+              "name": "mode",
+              "description": "mode of canvas's context"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

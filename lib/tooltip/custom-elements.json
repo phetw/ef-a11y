@@ -1,0 +1,62 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-tooltip",
+      "description": "Tooltip displays extra information when the\nuser hovers the pointer over an item.",
+      "attributes": [
+        {
+          "name": "selector",
+          "description": "CSS selector to match the tooltip",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "position",
+          "description": "The position of the tooltip. Use the following values:\n`auto` (default) - display based on mouse enter coordinates\n`above` - display above the element\n`right` - display to the right of the element\n`below` - display beneath the element\n`left` - display to the left of the element",
+          "type": "\"auto\" | \"above\" | \"right\" | \"below\" | \"left\"",
+          "default": "\"auto\""
+        },
+        {
+          "name": "transition-style",
+          "description": "Set the transition style.\nValue can be `fade`, `zoom`, `slide-down`, `slide-up`, `slide-right`,\n`slide-left`, `slide-right-down`, `slide-right-up`, `slide-left-down`, `slide-left-up`, or null in case of no transition",
+          "type": "TooltipTransitionStyle",
+          "default": "\"fade\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "selector",
+          "attribute": "selector",
+          "description": "CSS selector to match the tooltip",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "condition",
+          "description": "Provide a function to test against the target.\nReturn `true` if the target matches",
+          "type": "TooltipCondition"
+        },
+        {
+          "name": "renderer",
+          "description": "A renderer to define tooltip internal content.\nReturn undefined, `String`, `HTMLElement` or `DocumentFragment`.\nIf the content is not present, tooltip will not be displayed",
+          "type": "TooltipRenderer"
+        },
+        {
+          "name": "position",
+          "attribute": "position",
+          "description": "The position of the tooltip. Use the following values:\n`auto` (default) - display based on mouse enter coordinates\n`above` - display above the element\n`right` - display to the right of the element\n`below` - display beneath the element\n`left` - display to the left of the element",
+          "type": "\"auto\" | \"above\" | \"right\" | \"below\" | \"left\"",
+          "default": "\"auto\""
+        },
+        {
+          "name": "transitionStyle",
+          "attribute": "transition-style",
+          "description": "Set the transition style.\nValue can be `fade`, `zoom`, `slide-down`, `slide-up`, `slide-right`,\n`slide-left`, `slide-right-down`, `slide-right-up`, `slide-left-down`, `slide-left-up`, or null in case of no transition",
+          "type": "TooltipTransitionStyle",
+          "default": "\"fade\""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-header",
+      "description": "Use to identify and separate different sections of a page.\nHeaders helps to organize the page layout content into\na sensible hierarchy and improve the user experience.",
+      "attributes": [
+        {
+          "name": "level",
+          "description": "Use level styling from theme",
+          "type": "\"1\" | \"2\" | \"3\"",
+          "default": "\"2\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "level",
+          "attribute": "level",
+          "description": "Use level styling from theme",
+          "type": "\"1\" | \"2\" | \"3\"",
+          "default": "\"2\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "left",
+          "description": "Slot to add custom contents to the left side of header e.g. ef-icon, ef-checkbox"
+        },
+        {
+          "name": "right",
+          "description": "Slot to add custom contents to the right side of header e.g. ef-icon, ef-checkbox"
+        }
+      ]
+    }
+  ]
+}

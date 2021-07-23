@@ -1,0 +1,71 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-checkbox",
+      "description": "Form control for selecting one or several options",
+      "attributes": [
+        {
+          "name": "checked",
+          "description": "Value of checkbox",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "indeterminate",
+          "description": "Set state to indeterminate",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "readonly",
+          "description": "Set readonly state",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "checked",
+          "attribute": "checked",
+          "description": "Value of checkbox",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "indeterminate",
+          "attribute": "indeterminate",
+          "description": "Set state to indeterminate",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "readonly",
+          "attribute": "readonly",
+          "description": "Set readonly state",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "events": [
+        {
+          "name": "checked-changed",
+          "description": "Fired when the `checked` property changes."
+        }
+      ]
+    }
+  ]
+}

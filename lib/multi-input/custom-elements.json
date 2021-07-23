@@ -1,0 +1,238 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-multi-input",
+      "description": "An input control component to display a selection of pills",
+      "attributes": [
+        {
+          "name": "pills-only",
+          "description": "Hide text input box",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "icon",
+          "description": "Specify icon to display inside input box",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeholder",
+          "description": "Placeholder text to display in input box",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "error",
+          "description": "Set state to error",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "warning",
+          "description": "Set state to warning",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "maxlength",
+          "description": "Set character max limit",
+          "type": "number | null"
+        },
+        {
+          "name": "minlength",
+          "description": "Set character min limit",
+          "type": "number | null"
+        },
+        {
+          "name": "readonly",
+          "description": "Hides text field and clear icon from all pills",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "value",
+          "description": "Current value of text field",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "values",
+          "description": "Array of item's values ( readonly )",
+          "type": "string[]"
+        },
+        {
+          "name": "pillsOnly",
+          "attribute": "pills-only",
+          "description": "Hide text input box",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "description": "Specify icon to display inside input box",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeholder",
+          "attribute": "placeholder",
+          "description": "Placeholder text to display in input box",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "error",
+          "attribute": "error",
+          "description": "Set state to error",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "warning",
+          "attribute": "warning",
+          "description": "Set state to warning",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "maxLength",
+          "attribute": "maxlength",
+          "description": "Set character max limit",
+          "type": "number | null"
+        },
+        {
+          "name": "minLength",
+          "attribute": "minlength",
+          "description": "Set character min limit",
+          "type": "number | null"
+        },
+        {
+          "name": "selectionStart",
+          "description": "Selection start index",
+          "type": "number | null"
+        },
+        {
+          "name": "selectionEnd",
+          "description": "Selection end index",
+          "type": "number | null"
+        },
+        {
+          "name": "data",
+          "description": "The data object, used to render the list.",
+          "type": "MultiInputData | null"
+        },
+        {
+          "name": "readonly",
+          "attribute": "readonly",
+          "description": "Hides text field and clear icon from all pills",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "Current value of text field",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "events": [
+        {
+          "name": "value-changed",
+          "description": "Fired when new value of text field is changed.\nProperty `detail.value` will be the new value."
+        },
+        {
+          "name": "error-changed",
+          "description": "Dispatched when error state changes.\nProperty `detail.error` is error from validation."
+        },
+        {
+          "name": "item-added",
+          "description": "Fired when new pill is added.\nProperty `detail.item` is new added pill.\nProperty `detail.items` is new list of all pills."
+        },
+        {
+          "name": "item-removed",
+          "description": "Fired when item is removed.\nProperty `detail.item` is pill that removed.\nProperty `detail.items` is new list of all pills."
+        },
+        {
+          "name": "item-error",
+          "description": "Fired when item that attempt to add is invalid.\nProperty `detail.item` is item with an error.\nProperty `detail.items` a current list of pills."
+        }
+      ],
+      "methods": [
+        {
+          "name": "removeByValue",
+          "description": "Removes the item by the value and returns array of removed items",
+          "params": [
+            {
+              "name": "value",
+              "description": "Value of item to remove"
+            }
+          ]
+        },
+        {
+          "name": "add",
+          "description": "Add a new item to the input. Return newly added object or null if added invalid object.",
+          "params": [
+            {
+              "name": "item",
+              "description": "to add. Object must have at least value and label",
+              "type": "MultiInputDataItem"
+            }
+          ]
+        },
+        {
+          "name": "removeLastItem",
+          "description": "Removes last item. Returns item that removed or null if list was empty",
+          "params": []
+        },
+        {
+          "name": "removeByIndex",
+          "description": "Removes pill by index. Returns item that removed or null if list was empty",
+          "params": [
+            {
+              "name": "index",
+              "description": "of pill to be removed"
+            }
+          ]
+        },
+        {
+          "name": "setSelectionRange",
+          "description": "Set the selection range",
+          "params": [
+            {
+              "name": "startSelection",
+              "description": "Start of selection"
+            },
+            {
+              "name": "endSelection",
+              "description": "End of the selection"
+            }
+          ]
+        },
+        {
+          "name": "select",
+          "description": "Select the contents of input",
+          "params": []
+        }
+      ]
+    }
+  ]
+}

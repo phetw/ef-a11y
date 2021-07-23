@@ -1,0 +1,156 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-password-field",
+      "description": "A form control element for password",
+      "attributes": [
+        {
+          "name": "pattern",
+          "description": "Set regular expression for input validation",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeholder",
+          "description": "Set placeholder text",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "error",
+          "description": "Set state to error",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "warning",
+          "description": "Set state to warning",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "transparent",
+          "description": "Disables all other states and border/background styles.\nUse with advanced composite elements requiring e.g. multi selection in\ncombo-box when parent container handles element states.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "minlength",
+          "description": "Set character minimum limit",
+          "type": "number | null"
+        },
+        {
+          "name": "maxlength",
+          "description": "Set character maximum limit",
+          "type": "number | null"
+        },
+        {
+          "name": "value",
+          "description": "Input's value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "readonly",
+          "description": "Set readonly state",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "pattern",
+          "attribute": "pattern",
+          "description": "Set regular expression for input validation",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeholder",
+          "attribute": "placeholder",
+          "description": "Set placeholder text",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "error",
+          "attribute": "error",
+          "description": "Set state to error",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "warning",
+          "attribute": "warning",
+          "description": "Set state to warning",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "transparent",
+          "attribute": "transparent",
+          "description": "Disables all other states and border/background styles.\nUse with advanced composite elements requiring e.g. multi selection in\ncombo-box when parent container handles element states.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "minLength",
+          "attribute": "minlength",
+          "description": "Set character minimum limit",
+          "type": "number | null"
+        },
+        {
+          "name": "maxLength",
+          "attribute": "maxlength",
+          "description": "Set character maximum limit",
+          "type": "number | null"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "Input's value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "readonly",
+          "attribute": "readonly",
+          "description": "Set readonly state",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "events": [
+        {
+          "name": "value-changed",
+          "description": "Dispatched when value changes"
+        },
+        {
+          "name": "error-changed",
+          "description": "Dispatched when error state changes"
+        }
+      ],
+      "methods": [
+        {
+          "name": "select",
+          "description": "Select the contents of input",
+          "params": []
+        }
+      ]
+    }
+  ]
+}

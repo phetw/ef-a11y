@@ -1,0 +1,49 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-appstate-bar",
+      "description": "Used to display at the top of application to provide a status or information.",
+      "attributes": [
+        {
+          "name": "heading",
+          "description": "Text to display in heading section.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "state",
+          "description": "(optional) Type of state bar. Supported value are `info`, `highlight`.",
+          "type": "\"info\" | \"highlight\" | null"
+        }
+      ],
+      "properties": [
+        {
+          "name": "heading",
+          "attribute": "heading",
+          "description": "Text to display in heading section.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "state",
+          "attribute": "state",
+          "description": "(optional) Type of state bar. Supported value are `info`, `highlight`.",
+          "type": "\"info\" | \"highlight\" | null"
+        }
+      ],
+      "events": [
+        {
+          "name": "clear",
+          "description": "Clear Event\nFired when clear button is clicked"
+        }
+      ],
+      "slots": [
+        {
+          "name": "right",
+          "description": "place custom content on the right of bar."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-color-dialog",
+      "description": "Displays a colour picker dialog,\nfor selecting a predefined range of colours.",
+      "attributes": [
+        {
+          "name": "allow-nocolor",
+          "description": "Set the palettes to activate no-color option",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "description": "Value of selected color from color dialog will be written here as hex value\ne.g. \"#00f\" or \"#0000ff\"",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "hex",
+          "description": "Value of hex without # sign, supports both 3-digits shorthand hex and regular 6-digits hex",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "red",
+          "description": "Red value from 0 to 255",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "green",
+          "description": "Green value from 0 to 255",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "blue",
+          "description": "Blue value from 0 to 255",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "header",
+          "description": "Set Header/Title of the color dialog",
+          "type": "string|null"
+        },
+        {
+          "name": "opened",
+          "description": "Set dialog to open",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "x",
+          "description": "Set a specific x coordinate of dialog",
+          "type": "string"
+        },
+        {
+          "name": "y",
+          "description": "Set a specific y coordinate of dialog",
+          "type": "string"
+        },
+        {
+          "name": "no-cancel-on-esc-key",
+          "description": "Prevents dialog to close when user presses ESC key",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "position-target",
+          "description": "Set position of dialog i.e. `top`, `right`, `left`, `bottom`, `center` or combination of theme e.g. `top right`.",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "allowNocolor",
+          "attribute": "allow-nocolor",
+          "description": "Set the palettes to activate no-color option",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "Value of selected color from color dialog will be written here as hex value\ne.g. \"#00f\" or \"#0000ff\"",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "hex",
+          "attribute": "hex",
+          "description": "Value of hex without # sign, supports both 3-digits shorthand hex and regular 6-digits hex",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "red",
+          "attribute": "red",
+          "description": "Red value from 0 to 255",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "green",
+          "attribute": "green",
+          "description": "Green value from 0 to 255",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "blue",
+          "attribute": "blue",
+          "description": "Blue value from 0 to 255",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "header",
+          "attribute": "header",
+          "description": "Set Header/Title of the color dialog",
+          "type": "string|null"
+        },
+        {
+          "name": "opened",
+          "attribute": "opened",
+          "description": "Set dialog to open",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "noCancelOnEscKey",
+          "description": "Prevents dialog to close when user presses ESC key",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "x",
+          "attribute": "x",
+          "description": "Set a specific x coordinate of dialog",
+          "type": "string"
+        },
+        {
+          "name": "y",
+          "attribute": "y",
+          "description": "Set a specific y coordinate of dialog",
+          "type": "string"
+        },
+        {
+          "name": "positionTarget",
+          "description": "Set position of dialog i.e. `top`, `right`, `left`, `bottom`, `center` or combination of theme e.g. `top right`.",
+          "type": "string"
+        },
+        {
+          "name": "noCancelOnOutsideClick",
+          "description": "Prevents dialog to close when user clicks outside the dialog.",
+          "type": "boolean",
+          "default": "\"true\""
+        },
+        {
+          "name": "withBackdrop",
+          "description": "False to hide backdrop.",
+          "type": "boolean",
+          "default": "\"true\""
+        },
+        {
+          "name": "draggable",
+          "description": "False to make the dialog not draggable.",
+          "type": "boolean",
+          "default": "\"true\""
+        },
+        {
+          "name": "withShadow",
+          "description": "False to remove shadow for dialog component.",
+          "type": "boolean",
+          "default": "\"true\""
+        }
+      ],
+      "events": [
+        {
+          "name": "value-changed",
+          "description": "Fired when the `value` property changes."
+        },
+        {
+          "name": "opened-changed",
+          "description": "Fired when the `opened` property changes."
+        }
+      ]
+    }
+  ]
+}

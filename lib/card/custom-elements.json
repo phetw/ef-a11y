@@ -1,0 +1,49 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-card",
+      "description": "A card frame component.",
+      "attributes": [
+        {
+          "name": "header",
+          "description": "Set text on the header",
+          "type": "string | null"
+        },
+        {
+          "name": "footer",
+          "description": "Set text on the footer",
+          "type": "string | null"
+        }
+      ],
+      "properties": [
+        {
+          "name": "header",
+          "attribute": "header",
+          "description": "Set text on the header",
+          "type": "string | null"
+        },
+        {
+          "name": "footer",
+          "attribute": "footer",
+          "description": "Set text on the footer",
+          "type": "string | null"
+        },
+        {
+          "name": "config",
+          "description": "Set card configurations"
+        },
+        {
+          "name": "menu",
+          "description": "Card's overlay menu element"
+        }
+      ],
+      "events": [
+        {
+          "name": "item-trigger",
+          "description": "Fired when card menu is selected."
+        }
+      ]
+    }
+  ]
+}

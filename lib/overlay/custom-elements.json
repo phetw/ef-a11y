@@ -1,0 +1,342 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-overlay",
+      "description": "Element to help building modals, dialogs and other overlay content",
+      "attributes": [
+        {
+          "name": "opened",
+          "description": "True if the overlay is currently displayed",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "with-shadow",
+          "description": "True to add shadow",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "transparent",
+          "description": "True to make overlay background transparent",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "spacing",
+          "description": "True to apply spacing for overlay content",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "transition-style",
+          "description": "Set the transition style"
+        },
+        {
+          "name": "z-index",
+          "description": "Set a preferable z-index to override automatically calculated z-index"
+        },
+        {
+          "name": "x",
+          "description": "Set a specific x coordinate"
+        },
+        {
+          "name": "y",
+          "description": "Set a specific y coordinate"
+        },
+        {
+          "name": "position-target",
+          "description": "Set the position target as follows:\n- HTMLElement if overlay is position next to the HTML element\n- String containing `top`, `right`, `left`, `bottom`, `center` combinations to position against the screen.\nFor instance: `top left` - put the overlay at `top left` point of the screen; `bottom` - put overlay at `bottom center` point of the screen"
+        },
+        {
+          "name": "horizontal-offset",
+          "description": "A pixel value that will be added to the position calculated on the horizontal axis.\nThe offset will be applied either to the `left` or `right` depending on the `positionTarget`",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "vertical-offset",
+          "description": "A pixel value that will be added to the position calculated on the vertical axis.\nThe offset will be applied either to the `top` or `bottom` depending on the `positionTarget`",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "offset",
+          "description": "A pixel value that will be added to the position calculated on the vertical or horizontal axis.\nThe offset is applied dynamically depending on the `positionTarget`",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "no-cancel-on-esc-key",
+          "description": "Set to true to disable canceling the overlay with the ESC key",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "no-cancel-on-outside-click",
+          "description": "Set to true to disable canceling the overlay by clicking outside it",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "full-screen",
+          "description": "Set to true to show overlay in full screen mode",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "no-overlap",
+          "description": "True to not overlap positionTarget",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "no-interaction-lock",
+          "description": "Stop preventing user interaction when overlay is visible",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "no-focus-management",
+          "description": "True to not apply focus management.\nThe overlay will not limit Tab behaviour or do auto-focusing",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "lock-position-target",
+          "description": "True to lock position target\nValid only if noInteractionLock is false (default)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "with-backdrop",
+          "description": "True to show backdrop",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "no-autofocus",
+          "description": "Set to true to disable autofocusing the overlay or open",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "position",
+          "description": "Set position and align against the attach target.\nPosition may contain a single word or a comma separated list to set the priority.\nPosition is not applied if `attachTarget` is not HTML Element.\nFor instance: `[bottom-middle, top-middle]` - default position is bottom-middle, if cannot fit position top-middle;\nor `[left, right]` - align is not set, set best position on the left or right\n\nPosition can be: `top`, `right`, `bottom`, `left`, `center`\nAlign can be: `start`, `middle`, `end`",
+          "type": "{} | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "opened",
+          "attribute": "opened",
+          "description": "True if the overlay is currently displayed",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "withShadow",
+          "attribute": "with-shadow",
+          "description": "True to add shadow",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "transparent",
+          "attribute": "transparent",
+          "description": "True to make overlay background transparent",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "spacing",
+          "attribute": "spacing",
+          "description": "True to apply spacing for overlay content",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "transitionStyle",
+          "attribute": "transition-style",
+          "description": "Set the transition style"
+        },
+        {
+          "name": "zIndex",
+          "attribute": "z-index",
+          "description": "Set a preferable z-index to override automatically calculated z-index"
+        },
+        {
+          "name": "x",
+          "attribute": "x",
+          "description": "Set a specific x coordinate"
+        },
+        {
+          "name": "y",
+          "attribute": "y",
+          "description": "Set a specific y coordinate"
+        },
+        {
+          "name": "positionTarget",
+          "attribute": "position-target",
+          "description": "Set the position target as follows:\n- HTMLElement if overlay is position next to the HTML element\n- String containing `top`, `right`, `left`, `bottom`, `center` combinations to position against the screen.\nFor instance: `top left` - put the overlay at `top left` point of the screen; `bottom` - put overlay at `bottom center` point of the screen"
+        },
+        {
+          "name": "horizontalOffset",
+          "attribute": "horizontal-offset",
+          "description": "A pixel value that will be added to the position calculated on the horizontal axis.\nThe offset will be applied either to the `left` or `right` depending on the `positionTarget`",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "verticalOffset",
+          "attribute": "vertical-offset",
+          "description": "A pixel value that will be added to the position calculated on the vertical axis.\nThe offset will be applied either to the `top` or `bottom` depending on the `positionTarget`",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "offset",
+          "attribute": "offset",
+          "description": "A pixel value that will be added to the position calculated on the vertical or horizontal axis.\nThe offset is applied dynamically depending on the `positionTarget`",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "noCancelOnEscKey",
+          "attribute": "no-cancel-on-esc-key",
+          "description": "Set to true to disable canceling the overlay with the ESC key",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "noCancelOnOutsideClick",
+          "attribute": "no-cancel-on-outside-click",
+          "description": "Set to true to disable canceling the overlay by clicking outside it",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "fullScreen",
+          "attribute": "full-screen",
+          "description": "Set to true to show overlay in full screen mode",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "noOverlap",
+          "attribute": "no-overlap",
+          "description": "True to not overlap positionTarget",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "noInteractionLock",
+          "attribute": "no-interaction-lock",
+          "description": "Stop preventing user interaction when overlay is visible",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "noFocusManagement",
+          "attribute": "no-focus-management",
+          "description": "True to not apply focus management.\nThe overlay will not limit Tab behaviour or do auto-focusing",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "lockPositionTarget",
+          "attribute": "lock-position-target",
+          "description": "True to lock position target\nValid only if noInteractionLock is false (default)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "interactiveElements",
+          "description": "A list of elements, which are active when overlay is opened\nValid only if noInteractionLock is false (default)",
+          "type": "object",
+          "default": "[]"
+        },
+        {
+          "name": "withBackdrop",
+          "attribute": "with-backdrop",
+          "description": "True to show backdrop",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "noAutofocus",
+          "attribute": "no-autofocus",
+          "description": "Set to true to disable autofocusing the overlay or open",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "position",
+          "attribute": "position",
+          "description": "Set position and align against the attach target.\nPosition may contain a single word or a comma separated list to set the priority.\nPosition is not applied if `attachTarget` is not HTML Element.\nFor instance: `[bottom-middle, top-middle]` - default position is bottom-middle, if cannot fit position top-middle;\nor `[left, right]` - align is not set, set best position on the left or right\n\nPosition can be: `top`, `right`, `bottom`, `left`, `center`\nAlign can be: `start`, `middle`, `end`",
+          "type": "{} | undefined"
+        },
+        {
+          "name": "positionTargetConfig",
+          "description": "Get position target configuration based on positionTarget and fullScreen properties\nUsed for caching and calculations"
+        },
+        {
+          "name": "focusBoundary",
+          "description": "Set focus boundary to restrict tabbing. Default's overlay itself.\nIf external focus is required, set to null",
+          "default": "\"this\""
+        },
+        {
+          "name": "fullyOpened",
+          "description": "Returns true if the overlay is opened and animation is not running.\nReturns false if overlay is closed and animation is not running",
+          "type": "boolean"
+        },
+        {
+          "name": "transitioning",
+          "description": "Returns true if overlay is doing opening or closing transition",
+          "type": "boolean"
+        }
+      ],
+      "events": [
+        {
+          "name": "closed",
+          "description": "Dispatched when overlay becomes invisible and close animation finishes"
+        },
+        {
+          "name": "opened",
+          "description": "Dispatched when the overlay becomes visible and the open animation finishes"
+        },
+        {
+          "name": "refit",
+          "description": "Dispatched when refit algorithm finishes calculations"
+        },
+        {
+          "name": "opened-changed",
+          "description": "Dispatched when when open attribute changes internally. Prevent default to stop opening/closing pipeline"
+        }
+      ],
+      "methods": [
+        {
+          "name": "clearCached",
+          "description": "Clear all cached values.\nRun when external changes occur to styles to re-calculate position.",
+          "params": []
+        },
+        {
+          "name": "fit",
+          "description": "Fit the overlay panel",
+          "params": []
+        },
+        {
+          "name": "refit",
+          "description": "Clear all cached values and fit the overlay.\nUse this function if any of `maxWidth`, `maxHeight`, `minWidth`, `minHeight`, `height` or `width` changed",
+          "params": []
+        },
+        {
+          "name": "toFront",
+          "description": "Move overlay to front of other overlays",
+          "params": []
+        }
+      ]
+    }
+  ]
+}

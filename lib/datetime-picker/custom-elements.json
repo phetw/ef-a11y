@@ -1,0 +1,333 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-datetime-picker",
+      "description": "Control to pick date and time",
+      "attributes": [
+        {
+          "name": "min",
+          "description": "Set minimum date",
+          "type": "string"
+        },
+        {
+          "name": "max",
+          "description": "Set maximum date",
+          "type": "string"
+        },
+        {
+          "name": "weekdays-only",
+          "description": "Only enable weekdays",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "weekends-only",
+          "description": "Only enable weekends",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "first-day-of-week",
+          "description": "Set the first day of the week.\n0 - for Sunday, 6 - for Saturday",
+          "type": "number | undefined"
+        },
+        {
+          "name": "range",
+          "description": "Set to switch to range select mode",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "description": "Current date time value",
+          "type": "string"
+        },
+        {
+          "name": "values",
+          "description": "Set multiple selected values",
+          "type": "string[]"
+        },
+        {
+          "name": "am-pm",
+          "description": "Toggles 12hr time display",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "show-seconds",
+          "description": "Flag to show seconds time segment in display.\nSeconds are automatically shown when `hh:mm:ss` time format is provided as a value.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "placeholder",
+          "description": "Placeholder to display when no value is set",
+          "type": "string"
+        },
+        {
+          "name": "opened",
+          "description": "Toggles the opened state of the list",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "error",
+          "description": "Set state to error",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "warning",
+          "description": "Set state to warning",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "input-trigger-disabled",
+          "description": "Only open picker panel when calendar icon is clicked.\nClicking on the input will no longer open the picker.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "input-disabled",
+          "description": "Disable input part of the picker",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "popup-disabled",
+          "description": "Disable the popup",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "format",
+          "description": "Set the datetime format\nBased on dane-fns datetime formats",
+          "type": "string"
+        },
+        {
+          "name": "timepicker",
+          "description": "Toggle to display the time picker",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "duplex",
+          "description": "Display two calendar pickers.",
+          "type": "\"\" | \"consecutive\" | \"split\""
+        },
+        {
+          "name": "view",
+          "description": "Set the current calendar view.\nAccepted format: 'yyyy-MM'",
+          "type": "string"
+        },
+        {
+          "name": "readonly",
+          "description": "Set readonly state",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "min",
+          "attribute": "min",
+          "description": "Set minimum date",
+          "type": "string"
+        },
+        {
+          "name": "max",
+          "attribute": "max",
+          "description": "Set maximum date",
+          "type": "string"
+        },
+        {
+          "name": "weekdaysOnly",
+          "attribute": "weekdays-only",
+          "description": "Only enable weekdays",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "weekendsOnly",
+          "attribute": "weekends-only",
+          "description": "Only enable weekends",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "filter",
+          "description": "Custom filter, used for enabling/disabling certain dates",
+          "type": "DatetimePickerFilter | null"
+        },
+        {
+          "name": "firstDayOfWeek",
+          "attribute": "first-day-of-week",
+          "description": "Set the first day of the week.\n0 - for Sunday, 6 - for Saturday",
+          "type": "number | undefined"
+        },
+        {
+          "name": "range",
+          "attribute": "range",
+          "description": "Set to switch to range select mode",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "multiple",
+          "type": "boolean"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "Current date time value",
+          "type": "string"
+        },
+        {
+          "name": "values",
+          "attribute": "values",
+          "description": "Set multiple selected values",
+          "type": "string[]"
+        },
+        {
+          "name": "amPm",
+          "attribute": "am-pm",
+          "description": "Toggles 12hr time display",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "showSeconds",
+          "attribute": "show-seconds",
+          "description": "Flag to show seconds time segment in display.\nSeconds are automatically shown when `hh:mm:ss` time format is provided as a value.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "placeholder",
+          "attribute": "placeholder",
+          "description": "Placeholder to display when no value is set",
+          "type": "string"
+        },
+        {
+          "name": "opened",
+          "attribute": "opened",
+          "description": "Toggles the opened state of the list",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "error",
+          "attribute": "error",
+          "description": "Set state to error",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "warning",
+          "attribute": "warning",
+          "description": "Set state to warning",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "inputTriggerDisabled",
+          "attribute": "input-trigger-disabled",
+          "description": "Only open picker panel when calendar icon is clicked.\nClicking on the input will no longer open the picker.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "inputDisabled",
+          "attribute": "input-disabled",
+          "description": "Disable input part of the picker",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "popupDisabled",
+          "attribute": "popup-disabled",
+          "description": "Disable the popup",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "format",
+          "attribute": "format",
+          "description": "Set the datetime format\nBased on dane-fns datetime formats",
+          "type": "string"
+        },
+        {
+          "name": "timepicker",
+          "attribute": "timepicker",
+          "description": "Toggle to display the time picker",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "duplex",
+          "attribute": "duplex",
+          "description": "Display two calendar pickers.",
+          "type": "\"\" | \"consecutive\" | \"split\""
+        },
+        {
+          "name": "view",
+          "attribute": "view",
+          "description": "Set the current calendar view.\nAccepted format: 'yyyy-MM'",
+          "type": "string"
+        },
+        {
+          "name": "views",
+          "description": "Set the current calendar views for duplex mode\nAccepted format: 'yyyy-MM'",
+          "type": "string[]"
+        },
+        {
+          "name": "readonly",
+          "attribute": "readonly",
+          "description": "Set readonly state",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Set disabled state",
+          "type": "boolean",
+          "default": "\"false\""
+        }
+      ],
+      "events": [
+        {
+          "name": "opened-changed",
+          "description": "Dispatched when when opened attribute changes internally"
+        },
+        {
+          "name": "value-changed",
+          "description": "Dispatched when value changes"
+        },
+        {
+          "name": "error-changed",
+          "description": "Dispatched when error state changes"
+        },
+        {
+          "name": "view-changed",
+          "description": "Dispatched when internal view changes"
+        }
+      ],
+      "methods": [
+        {
+          "name": "validateInput",
+          "description": "Validate input. Mark as error if input is invalid",
+          "params": []
+        }
+      ]
+    }
+  ]
+}

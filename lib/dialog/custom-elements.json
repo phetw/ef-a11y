@@ -1,0 +1,136 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ef-dialog",
+      "description": "Popup window, designed to contain and show any HTML content.\nIt provides modal and dragging functionality,\nand also allows custom footers and control buttons to be used.",
+      "attributes": [
+        {
+          "name": "header",
+          "description": "Set Header/Title of the dialog",
+          "type": "string | null"
+        },
+        {
+          "name": "draggable",
+          "description": "Should the dialog be draggable",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "opened",
+          "description": "Set dialog to open",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "x",
+          "description": "Set a specific x coordinate of dialog",
+          "type": "string"
+        },
+        {
+          "name": "y",
+          "description": "Set a specific y coordinate of dialog",
+          "type": "string"
+        },
+        {
+          "name": "no-cancel-on-esc-key",
+          "description": "Prevents dialog to close when user presses ESC key",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "full-screen",
+          "description": "Set dialog to full screen",
+          "type": "boolean"
+        },
+        {
+          "name": "position-target",
+          "description": "Set position of dialog i.e. `top`, `right`, `left`, `bottom`, `center` or combination of theme e.g. `top right`.",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "header",
+          "attribute": "header",
+          "description": "Set Header/Title of the dialog",
+          "type": "string | null"
+        },
+        {
+          "name": "draggable",
+          "attribute": "draggable",
+          "description": "Should the dialog be draggable",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "noCancelOnOutsideClick",
+          "description": "Prevents dialog to close when user clicks outside the dialog.",
+          "type": "boolean"
+        },
+        {
+          "name": "opened",
+          "attribute": "opened",
+          "description": "Set dialog to open",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "noCancelOnEscKey",
+          "description": "Prevents dialog to close when user presses ESC key",
+          "type": "boolean",
+          "default": "\"false\""
+        },
+        {
+          "name": "x",
+          "attribute": "x",
+          "description": "Set a specific x coordinate of dialog",
+          "type": "string"
+        },
+        {
+          "name": "y",
+          "attribute": "y",
+          "description": "Set a specific y coordinate of dialog",
+          "type": "string"
+        },
+        {
+          "name": "fullScreen",
+          "description": "Set dialog to full screen",
+          "type": "boolean"
+        },
+        {
+          "name": "positionTarget",
+          "description": "Set position of dialog i.e. `top`, `right`, `left`, `bottom`, `center` or combination of theme e.g. `top right`.",
+          "type": "string"
+        }
+      ],
+      "events": [
+        {
+          "name": "opened-changed",
+          "description": "Fired when value of `opened` property is changed. Prevent default to stop default action"
+        },
+        {
+          "name": "confirm",
+          "description": "Fired when dialog is closed by user clicked a default OK button. Prevent default to stop default action"
+        },
+        {
+          "name": "cancel",
+          "description": "Fired when dialog is closed by user clicked a default Cancel button, clicked outside to close dialog or press ESC to close the dialog. Prevent default to stop default action"
+        }
+      ],
+      "slots": [
+        {
+          "name": "footer",
+          "description": "Hide default OK and Cancel button and replace dialog's footer with your custom content."
+        }
+      ],
+      "methods": [
+        {
+          "name": "refit",
+          "description": "Clear all cached values and fit the popup.\nUse this function only if maxWidth, maxHeight, minWidth, minHeight, height, width are changed",
+          "params": []
+        }
+      ]
+    }
+  ]
+}
