@@ -22,7 +22,7 @@
     <h2>Button</h2>
     <div class="panel">
       <h3>Default</h3>
-      <ef-button id="default">Print</ef-button>
+      <ef-button id="default" aria-label="Print">Print</ef-button>
       <div class="panel">Tap <span id="default-text">0</span></div>
       <script>
         let count = 1;
@@ -32,7 +32,7 @@
         });
       </script>
       <h3>Toggle button</h3>
-      <ef-button id="toggle-button" toggles>Play</ef-button>
+      <ef-button id="toggle-button" aria-label="Play" toggles>Play</ef-button>
       <div class="panel">Status: <span id="toggle-button-text"></span></div>
 
       <script>
