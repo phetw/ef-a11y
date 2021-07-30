@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>a11y</title>
+    <title>EF-a11y</title>
   </head>
   <body>
     <script src="./index.js"></script>
@@ -17,7 +17,7 @@
         background-color: #1a1a1a;
       }
     </style>
-    <h1>a11y</h1>
+    <h1>EF-a11y</h1>
 
     <h2>Button</h2>
     <div class="panel">
@@ -31,8 +31,11 @@
           txt.innerHTML = count++;
         });
       </script>
+      <h3>Call-to-Action</h3>
+      <ef-button id="cta" aria-label="Register" cta>Register</ef-button>
+
       <h3>Toggle button</h3>
-      <ef-button id="toggle-button" aria-label="Play" toggles>Play</ef-button>
+      <ef-button id="toggle-button" aria-label="Play or Pause" toggles>Play</ef-button>
       <div class="panel">Status: <span id="toggle-button-text"></span></div>
 
       <script>
