@@ -12,18 +12,17 @@
       body {
         padding: 20px;
       }
-      .panel {
+      ef-panel {
         padding: 20px;
-        background-color: #1a1a1a;
       }
     </style>
     <h1>EF-a11y</h1>
 
     <h2>Button</h2>
-    <div class="panel">
+    <ef-panel>
       <h3>Default</h3>
       <ef-button id="default" aria-label="Print">Print</ef-button>
-      <div class="panel">Tap <span id="default-text">0</span></div>
+      <ef-panel>Tap <span id="default-text">0</span></ef-panel>
       <script>
         let count = 1;
         const txt = document.getElementById('default-text');
@@ -36,7 +35,7 @@
 
       <h3>Toggle button</h3>
       <ef-button id="toggle-button" aria-label="Play or Pause" toggles>Play</ef-button>
-      <div class="panel">Status: <span id="toggle-button-text"></span></div>
+      <ef-panel>Status: <span id="toggle-button-text"></span></ef-panel>
 
       <script>
         const txt2 = document.getElementById('toggle-button-text');
@@ -44,10 +43,10 @@
           txt2.innerHTML = e.target.active ? '|> Play' : '|| Pause';
         });
       </script>
-    </div>
+    </ef-panel>
 
     <h2>Combo-box</h2>
-    <div class="panel">
+    <ef-panel>
       <h3>Default</h3>
       <ef-combo-box id="1"></ef-combo-box>
 
@@ -57,7 +56,7 @@
 
       <h3>Multiple</h3>
       <ef-combo-box id="2" multiple></ef-combo-box>
-    </div>
+    </ef-panel>
     <script>
       (function () {
         document.querySelectorAll('ef-combo-box').forEach((el) => {
