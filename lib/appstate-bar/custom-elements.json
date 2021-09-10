@@ -35,7 +35,7 @@
       "events": [
         {
           "name": "clear",
-          "description": "Clear Event\nFired when clear button is clicked"
+          "description": "fired when clear button is clicked"
         }
       ],
       "slots": [

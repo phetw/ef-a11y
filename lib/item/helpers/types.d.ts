@@ -1,9 +1,6 @@
 import { DataItem } from '@refinitiv-ui/utils';
 export declare type ItemType = 'text' | 'header' | 'divider';
 interface CommonItem extends DataItem {
-    id?: string;
-    role?: string;
-    'aria-selected'?: boolean;
     /**
      * Type of item. Value can be `text`, `header`, `divider`
      */
@@ -58,3 +55,4 @@ export interface ItemDivider extends CommonItem {
  */
 export declare type ItemData = ItemText | ItemHeader | ItemDivider;
 export {};
+//# sourceMappingURL=types.d.ts.map

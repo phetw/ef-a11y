@@ -1,3 +1,4 @@
+import { JSXInterface } from '../../jsx';
 import { TemplateResult, ControlElement, PropertyValues } from '@refinitiv-ui/core';
 import '../../icon';
 import '../../checkbox';
@@ -71,3 +72,17 @@ export declare class TreeItem<T extends TreeDataItem = TreeDataItem> extends Con
     protected update(changedProperties: PropertyValues): void;
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=tree-item.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-tree-item': TreeItem;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-tree-item': Partial<TreeItem> | JSXInterface.HTMLAttributes<TreeItem>;
+    }
+  }
+}
+
+export {};

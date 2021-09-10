@@ -43,3 +43,4 @@ export declare const size: () => number;
  * @returns {void}
  */
 export declare const clear: () => void;
+//# sourceMappingURL=backdrop-manager.d.ts.map

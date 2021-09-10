@@ -14,3 +14,4 @@ declare const ANIMATION_DURATION = 100;
  */
 declare const tweenAnimate: (configs: Configs) => void;
 export { tweenAnimate, ANIMATION_DURATION };
+//# sourceMappingURL=animate.d.ts.map

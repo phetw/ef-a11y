@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { BasicElement, TemplateResult, CSSResult, PropertyValues } from '@refinitiv-ui/core';
 /**
  * Used to display multiple buttons to create a list of commands bar.
@@ -59,3 +60,17 @@ export declare class ButtonBar extends BasicElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-button-bar': ButtonBar;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-button-bar': Partial<ButtonBar> | JSXInterface.HTMLAttributes<ButtonBar>;
+    }
+  }
+}
+
+export {};

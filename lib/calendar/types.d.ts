@@ -31,3 +31,4 @@ export interface CellDivElement extends HTMLDivElement, Cell {
 export declare type Row = {
     cells: Cell[];
 };
+//# sourceMappingURL=types.d.ts.map

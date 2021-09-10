@@ -1,3 +1,4 @@
+import { JSXInterface } from '../../jsx';
 import { BasicElement, TemplateResult, CSSResult, PropertyValues } from '@refinitiv-ui/core';
 import '../../icon';
 /**
@@ -73,3 +74,17 @@ export declare class Notification extends BasicElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=notification.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-notification': Notification;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-notification': Partial<Notification> | JSXInterface.HTMLAttributes<Notification>;
+    }
+  }
+}
+
+export {};

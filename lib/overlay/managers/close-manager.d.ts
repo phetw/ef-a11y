@@ -52,3 +52,4 @@ export declare const size: () => number;
  */
 export declare const clear: () => void;
 export {};
+//# sourceMappingURL=close-manager.d.ts.map

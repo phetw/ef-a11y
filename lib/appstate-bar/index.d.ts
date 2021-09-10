@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { BasicElement, TemplateResult, CSSResult, PropertyValues } from '@refinitiv-ui/core';
 import '../icon';
 /**
@@ -48,3 +49,17 @@ export declare class AppstateBar extends BasicElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-appstate-bar': AppstateBar;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-appstate-bar': Partial<AppstateBar> | JSXInterface.HTMLAttributes<AppstateBar>;
+    }
+  }
+}
+
+export {};

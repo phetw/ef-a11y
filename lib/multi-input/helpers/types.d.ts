@@ -9,3 +9,4 @@ export interface MultiInputDataItem extends CollectionItem {
     readonly?: boolean;
     disabled?: boolean;
 }
+//# sourceMappingURL=types.d.ts.map

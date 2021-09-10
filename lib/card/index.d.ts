@@ -1,13 +1,17 @@
+import { JSXInterface } from '../jsx';
 import { BasicElement, TemplateResult, CSSResult, PropertyValues } from '@refinitiv-ui/core';
 import '../label';
-import '../button';
+import '../icon';
 import '../overlay-menu';
-import { OverlayMenu } from '../overlay-menu';
 import { CardConfig } from './helpers/types';
 export { CardConfig };
 /**
  * A card frame component.
+ *
  * @fires item-trigger - Fired when card menu is selected.
+ *
+ * @slot header - Adds slotted content into the header of the card.
+ * @slot footer - Adds slotted content into the footer of the card.
  */
 export declare class Card extends BasicElement {
     /**
@@ -26,20 +30,16 @@ export declare class Card extends BasicElement {
     /**
      * Set text on the header
      */
-    header: string | null;
+    header: string;
     /**
      * Set text on the footer
      */
-    footer: string | null;
+    footer: string;
     /**
      * Set card configurations
      */
-    get config(): CardConfig | undefined;
-    set config(config: CardConfig | undefined);
-    /**
-     * Card's overlay menu element
-    */
-    get menu(): OverlayMenu | undefined;
+    get config(): CardConfig;
+    set config(config: CardConfig);
     /**
      * Get menu element from shadow root
      */
@@ -47,22 +47,61 @@ export declare class Card extends BasicElement {
     /**
      * Get button element from shadow root
      */
-    private buttonElement?;
+    private openMenuElement?;
     /**
      * Menu data for creating overlay-menu
      */
-    private menuData;
+    private menuData?;
+    /**
+     * True if header has slotted content
+     */
+    private headerHasContent;
+    /**
+     * True if footer has slotted content
+     */
+    private footerHasContent;
     /**
      * Open menu
      * @returns {void}
      */
     private openMenu;
     /**
+     * Close menu
+     * @returns {void}
+     */
+    private closeMenu;
+    /**
+     * Run on header slot slotchange
+     * @param event Footer slotchange event
+     * @returns {void}
+     */
+    private onHeaderSlotChange;
+    /**
+     * Run on footer slot slotchange
+     * @param event Header slotchange event
+     * @returns {void}
+     */
+    private onFooterSlotChange;
+    /**
+     * True if card has header
+     */
+    private get withHeader();
+    /**
+     * True if card has footer
+     */
+    private get withFooter();
+    /**
      * Called after render life-cycle finished
      * @param changedProperties Properties which have changed
      * @return {void}
      */
     protected updated(changedProperties: PropertyValues): void;
+    /**
+     * Called after the component is first rendered
+     * @param changedProperties Properties which have changed
+     * @return {void}
+     */
+    protected firstUpdated(changedProperties: PropertyValues): void;
     /**
      * Template of menu
      * @return menu template
@@ -85,3 +124,17 @@ export declare class Card extends BasicElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-card': Card;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-card': Partial<Card> | JSXInterface.HTMLAttributes<Card>;
+    }
+  }
+}
+
+export {};

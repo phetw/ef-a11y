@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { BasicElement, TemplateResult, CSSResult, PropertyValues } from '@refinitiv-ui/core';
 import '../canvas';
 /**
@@ -126,3 +127,17 @@ export declare class LedGauge extends BasicElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-led-gauge': LedGauge;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-led-gauge': Partial<LedGauge> | JSXInterface.HTMLAttributes<LedGauge>;
+    }
+  }
+}
+
+export {};

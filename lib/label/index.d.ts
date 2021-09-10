@@ -1,9 +1,9 @@
-import { ResponsiveElement, TemplateResult, CSSResult, PropertyValues } from '@refinitiv-ui/core';
-import '../tooltip';
+import { JSXInterface } from '../jsx';
+import { BasicElement, TemplateResult, CSSResult } from '@refinitiv-ui/core';
 /**
  * Displays a text with alternative truncation
  */
-export declare class Label extends ResponsiveElement {
+export declare class Label extends BasicElement {
     /**
      * Element version number
      * @returns version number
@@ -17,13 +17,9 @@ export declare class Label extends ResponsiveElement {
      */
     static get styles(): CSSResult | CSSResult[];
     /**
-     * Enable shortening the slot content
-     */
-    truncate: 'center' | '' | null | undefined;
-    /**
      * Limit the number of lines before truncating
      */
-    maxLine: null;
+    lineClamp: number;
     /**
      * Set state to error
      */
@@ -33,90 +29,56 @@ export declare class Label extends ResponsiveElement {
      */
     warning: boolean;
     /**
-     * Use to set title attribute for tooltip
+     * Trimmed chunks of textual content
      */
-    private span;
+    private chunks;
     /**
-     * Use to prevent resizes observer in certain use cases
+     * Mutation Observer used to detect changes in the Light DOM
      */
-    private updateTimer;
+    private mutationObserver;
     /**
-     * Store trimmed text content
+     * Render used to display the tooltip
+     * @returns Tooltip text
      */
-    private rawText;
+    protected tooltipRenderer: () => string;
     /**
-     * Tooltip state when truncate = center
+     * Condition used to display the tooltip
+     * @param target Tooltip target
+     * @returns Whether the tooltip should be shown or not.
      */
-    private enableTooltip;
-    private mutationObserver?;
+    protected tooltipCondition: (target: HTMLElement) => boolean;
     /**
-     * The lifecycle method called when properties changed first time
-     * @param changedProperties properties it's the Map object which has the updated properties
+     * @override
+     */
+    connectedCallback(): void;
+    /**
+     * @override
+     */
+    disconnectedCallback(): void;
+    /**
+     * Decides whether the tooltip should b shown
+     * @param tooltipTarget Target element passed by the tooltip condition
+     * @returns True if the tooltip should be shown
+     */
+    protected shouldShowTooltip(tooltipTarget: HTMLElement): boolean;
+    /**
+     * Handles any modifications to the internal HTML
+     * @param [mutation=false] is the request from a mutation event?
      * @returns {void}
      */
-    protected firstUpdated(changedProperties: PropertyValues): void;
+    protected recalculate(mutation?: boolean): void;
     /**
-     * Called when the element’s DOM has been updated and rendered
-     * @param changedProperties Properties that has changed
-     * @returns shouldUpdate
+     * Returns cleaned version of `this.textContent`.
      */
-    protected updated(changedProperties: PropertyValues): void;
+    protected get text(): string;
     /**
-     * Used to prevent handler fired when previous content are the same as last content
+     * Default template
      */
-    private previousContent;
+    protected get truncateTemplate(): TemplateResult;
     /**
-     * Handle statement after slot or innerHTML has been changed
-     * @returns void
+     * Template for when line clamp is set
      */
-    private handleSlotChange;
-    /**
-     * Restore text content
-     * @returns {void}
-     */
-    private restoreTextContent;
-    /**
-     * concatenating all of text content in the slots
-     * @returns trimmed text content
-     */
-    private retrieveSlotContent;
-    /**
-     * Get element width minus padding
-     * @param node parent node that wrapper text node
-     * @returns {number} width minus padding
-     */
-    private getElementWidthMinusPadding;
-    /**
-     * Truncate a long string in the middle and add an ellipsis.
-     * @param parentNode parent node
-     * @param textNode text node
-     * @param fullText string
-     * @returns {void}
-     */
-    private middleEllipsis;
-    /**
-     * Handle text ellipsis and tooltip state when element has been resized
-     * @returns void
-     */
-    private onResize;
-    /**
-     * Handle tooltip statement when properties changed
-     * @returns void
-     */
-    private updateTooltip;
-    /**
-     * private method but can't override
-     * access modifiers in typescript.
-     * @ignore
-     * @param size element dimensions
-     * @returns {void}
-     */
-    resizedCallback(): void;
-    /**
-     * Determine show/hide tooltip state
-     * @returns {boolean} true if center truncate or the element is smaller than a parent
-     */
-    private isShowTooltip;
+    protected get clampTemplate(): TemplateResult;
     /**
      * A `TemplateResult` that will be used
      * to render the updated internal template.
@@ -124,3 +86,17 @@ export declare class Label extends ResponsiveElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-label': Label;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-label': Partial<Label> | JSXInterface.HTMLAttributes<Label>;
+    }
+  }
+}
+
+export {};

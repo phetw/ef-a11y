@@ -56,3 +56,4 @@ export declare class Palettes extends BasicElement {
      */
     protected updateValue(element: SVGAElement): void;
 }
+//# sourceMappingURL=palettes.d.ts.map

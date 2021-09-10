@@ -28,3 +28,4 @@ declare const warn: (message: string, duration: number) => Notification;
  */
 declare const error: (message: string, duration: number) => Notification;
 export { info, confirm, warn, error };
+//# sourceMappingURL=status.d.ts.map

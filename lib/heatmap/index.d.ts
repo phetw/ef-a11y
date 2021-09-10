@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { ResponsiveElement, TemplateResult, CSSResult, PropertyValues } from '@refinitiv-ui/core';
 import '../canvas';
 import '../tooltip';
@@ -424,3 +425,17 @@ export declare class Heatmap extends ResponsiveElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-heatmap': Heatmap;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-heatmap': Partial<Heatmap> | JSXInterface.HTMLAttributes<Heatmap>;
+    }
+  }
+}
+
+export {};

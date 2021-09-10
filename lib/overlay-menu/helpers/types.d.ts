@@ -6,3 +6,4 @@ export declare type NestedMenu = {
     item: Item;
 };
 export declare type OverlayMenuData = ItemData[] | CollectionComposer<ItemData>;
+//# sourceMappingURL=types.d.ts.map

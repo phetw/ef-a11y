@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { TemplateResult, CSSResult, ControlElement } from '@refinitiv-ui/core';
 import '../icon';
 import '../label';
@@ -35,13 +36,9 @@ export declare class Tab extends ControlElement {
      */
     clears: boolean;
     /**
-     * Enable shortening the label
-     */
-    truncate: 'center' | '' | null | undefined;
-    /**
      * Limit the number of lines before truncating
      */
-    maxLine: string | null | undefined;
+    lineClamp: number;
     /**
      * Set tab to clearable on hover
      */
@@ -67,10 +64,10 @@ export declare class Tab extends ControlElement {
      */
     private checkSlotChildren;
     /**
-     * Omitted maxLine if subLabel is provided
-     * @returns Max line value
+     * Omitted lineClamp if subLabel is provided
+     * @returns line Clamp value
      */
-    private getMaxLine;
+    private getLineClamp;
     /**
      * @param event event from close button
      * @returns {void}
@@ -105,3 +102,17 @@ export declare class Tab extends ControlElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-tab': Tab;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-tab': Partial<Tab> | JSXInterface.ControlHTMLAttributes<Tab>;
+    }
+  }
+}
+
+export {};

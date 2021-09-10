@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { ControlElement, TemplateResult, CSSResult, PropertyValues, MultiValue } from '@refinitiv-ui/core';
 import '../overlay';
 import '../item';
@@ -371,3 +372,17 @@ export declare class Select extends ControlElement implements MultiValue {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-select': Select;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-select': Partial<Select> | JSXInterface.ControlHTMLAttributes<Select>;
+    }
+  }
+}
+
+export {};

@@ -36,15 +36,10 @@
           "default": "false"
         },
         {
-          "name": "truncate",
-          "description": "Enable shortening the label",
-          "type": "\"\" | \"center\" | null | undefined",
-          "default": "\"\""
-        },
-        {
-          "name": "max-line",
+          "name": "line-clamp",
           "description": "Limit the number of lines before truncating",
-          "type": "string | null | undefined"
+          "type": "number",
+          "default": "1"
         },
         {
           "name": "clears-on-hover",
@@ -96,17 +91,11 @@
           "default": "false"
         },
         {
-          "name": "truncate",
-          "attribute": "truncate",
-          "description": "Enable shortening the label",
-          "type": "\"\" | \"center\" | null | undefined",
-          "default": "\"\""
-        },
-        {
-          "name": "maxLine",
-          "attribute": "max-line",
+          "name": "lineClamp",
+          "attribute": "line-clamp",
           "description": "Limit the number of lines before truncating",
-          "type": "string | null | undefined"
+          "type": "number",
+          "default": "1"
         },
         {
           "name": "clearsOnHover",
@@ -126,7 +115,7 @@
       "events": [
         {
           "name": "clear",
-          "description": "Fires when click on cross occurs. `detail.label` provides label of tab if defined. `detail.active` provides current active state."
+          "description": "Dispatched when click on cross button occurs"
         }
       ]
     }

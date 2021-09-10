@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { ControlElement, TemplateResult, CSSResult, PropertyValues, MultiValue } from '@refinitiv-ui/core';
 import '../button';
 import './locales';
@@ -304,3 +305,17 @@ export declare class Calendar extends ControlElement implements MultiValue {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-calendar': Calendar;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-calendar': Partial<Calendar> | JSXInterface.ControlHTMLAttributes<Calendar>;
+    }
+  }
+}
+
+export {};

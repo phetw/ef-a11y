@@ -6,3 +6,4 @@ import { TooltipRenderer } from './types';
  */
 declare const tooltipRenderer: TooltipRenderer;
 export { tooltipRenderer };
+//# sourceMappingURL=renderer.d.ts.map

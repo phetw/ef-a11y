@@ -16,6 +16,12 @@
           "description": "Breaks the relationship when multiple\nselection mode is enabled",
           "type": "boolean",
           "default": "false"
+        },
+        {
+          "name": "stateless",
+          "description": "Disable selections",
+          "type": "boolean",
+          "default": "\"false\""
         }
       ],
       "properties": [
@@ -48,6 +54,13 @@
           "name": "data",
           "description": "Data object to be used for creating tree",
           "type": "TreeData<T>"
+        },
+        {
+          "name": "stateless",
+          "attribute": "stateless",
+          "description": "Disable selections",
+          "type": "boolean",
+          "default": "\"false\""
         }
       ],
       "events": [
@@ -56,7 +69,8 @@
           "description": "Fired when the users changed selection item."
         },
         {
-          "name": "expanded-changed"
+          "name": "expanded-changed",
+          "description": "Fired when an item's expanded state has changed."
         }
       ],
       "methods": [

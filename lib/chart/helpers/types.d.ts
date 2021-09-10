@@ -67,3 +67,4 @@ export interface ChartJS extends Chart {
     isDatasetVisible(isDatasetVisible: number): boolean;
 }
 export {};
+//# sourceMappingURL=types.d.ts.map

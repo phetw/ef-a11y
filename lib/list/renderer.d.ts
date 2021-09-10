@@ -34,3 +34,4 @@ export interface RendererConstructor {
  */
 export declare abstract class Renderer extends ExtensibleFunction {
 }
+//# sourceMappingURL=renderer.d.ts.map

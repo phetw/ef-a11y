@@ -1,4 +1,3 @@
-import '../index';
 import { Tooltip } from '../index';
 import { TooltipCondition, TooltipRenderer } from '../helpers/types';
 /**
@@ -20,3 +19,4 @@ declare const removeTooltipCondition: (condition: TooltipCondition) => void;
  */
 declare const tooltipElement: Tooltip;
 export { tooltipElement, addTooltipCondition, removeTooltipCondition };
+//# sourceMappingURL=tooltip-element.d.ts.map

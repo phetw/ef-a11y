@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { TemplateResult, CSSResult } from '@refinitiv-ui/core';
 import { TranslateDirective } from '@refinitiv-ui/translate';
 import { CollectionComposer, TimeoutTaskRunner } from '@refinitiv-ui/utils';
@@ -261,6 +262,21 @@ export declare class TreeSelect extends ComboBox<TreeSelectDataItem> {
     protected filterItems(): void;
     /**
      * Utility method
+     * Adds descendants for each item passed
+     * @param items List of child items
+     * @returns {void}
+     */
+    protected addItemDescendantsToRender(items: TreeSelectDataItem[]): void;
+    /**
+     * Utility method
+     * Add nested children of item list
+     * @param items List of items
+     * @param excludeItems List of exclude items
+     * @returns void
+     */
+    protected addNestedItemsToRender(items: readonly TreeSelectDataItem[], excludeItems: readonly TreeSelectDataItem[]): void;
+    /**
+     * Utility method
      * @param items List of child items
      * Adds ancestors for each item passed and expand
      *
@@ -367,3 +383,17 @@ export declare class TreeSelect extends ComboBox<TreeSelectDataItem> {
      */
     protected get popupTemplate(): TemplateResult | undefined;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-tree-select': TreeSelect;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-tree-select': Partial<TreeSelect> | JSXInterface.HTMLAttributes<TreeSelect>;
+    }
+  }
+}
+
+export {};

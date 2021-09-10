@@ -3,3 +3,4 @@ import '../elements/tree-item';
 export declare class TreeRenderer extends Renderer {
     constructor(scope?: unknown);
 }
+//# sourceMappingURL=renderer.d.ts.map

@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { ControlElement, CSSResult, PropertyValues, TemplateResult } from '@refinitiv-ui/core';
 import '../icon';
 /**
@@ -135,3 +136,17 @@ export declare class EmailField extends ControlElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-email-field': EmailField;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-email-field': Partial<EmailField> | JSXInterface.ControlHTMLAttributes<EmailField>;
+    }
+  }
+}
+
+export {};

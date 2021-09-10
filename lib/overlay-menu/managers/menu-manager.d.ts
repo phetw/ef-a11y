@@ -96,3 +96,4 @@ declare abstract class OpenedMenusManager {
     static clear(): void;
 }
 export { OpenedMenusManager };
+//# sourceMappingURL=menu-manager.d.ts.map

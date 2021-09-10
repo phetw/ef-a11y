@@ -1,3 +1,4 @@
+import { JSXInterface } from '../../jsx';
 import { ResponsiveElement, ElementSize, TemplateResult, PropertyValues } from '@refinitiv-ui/core';
 import { Notification } from './notification';
 import { TaskOptions } from '../helpers/types';
@@ -80,3 +81,17 @@ export declare class NotificationTray extends ResponsiveElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=notification-tray.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-notification-tray': NotificationTray;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-notification-tray': Partial<NotificationTray> | JSXInterface.HTMLAttributes<NotificationTray>;
+    }
+  }
+}
+
+export {};

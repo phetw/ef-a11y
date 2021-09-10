@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { ControlElement, CSSResult, MultiValue, TemplateResult, PropertyValues } from '@refinitiv-ui/core';
 import '../pill';
 import '../text-field';
@@ -280,3 +281,17 @@ export declare class MultiInput extends ControlElement implements MultiValue {
      */
     private isItem;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-multi-input': MultiInput;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-multi-input': Partial<MultiInput> | JSXInterface.ControlHTMLAttributes<MultiInput>;
+    }
+  }
+}
+
+export {};

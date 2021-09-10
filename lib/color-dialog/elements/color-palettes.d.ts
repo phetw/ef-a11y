@@ -1,3 +1,4 @@
+import { JSXInterface } from '../../jsx';
 import { TemplateResult, CSSResult, PropertyValues } from '@refinitiv-ui/core';
 import { Palettes } from './palettes';
 /**
@@ -35,3 +36,17 @@ export declare class ColorPalettes extends Palettes {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=color-palettes.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-color-palettes': ColorPalettes;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-color-palettes': Partial<ColorPalettes> | JSXInterface.HTMLAttributes<ColorPalettes>;
+    }
+  }
+}
+
+export {};

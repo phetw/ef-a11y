@@ -29,3 +29,4 @@ declare const monthsNames: (locale: string, width?: Intl.DateTimeFormatOptions['
  */
 declare const formatLocaleDate: (date: Date, locale: string, includeMonth?: boolean, includeEra?: boolean) => string;
 export { weekdaysNames, monthsNames, formatLocaleDate, ViewFormatTranslateParams };
+//# sourceMappingURL=locales.d.ts.map

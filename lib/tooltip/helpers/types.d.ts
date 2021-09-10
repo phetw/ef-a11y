@@ -21,3 +21,4 @@ export declare type DocumentCallbacks = {
     blur: FocusCallback;
 };
 export {};
+//# sourceMappingURL=types.d.ts.map

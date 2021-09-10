@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { BasicElement, CSSResult, TemplateResult, PropertyValues } from '@refinitiv-ui/core';
 export { preload } from './utils/FlagLoader';
 /**
@@ -77,3 +78,17 @@ export declare class Flag extends BasicElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-flag': Flag;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-flag': Partial<Flag> | JSXInterface.HTMLAttributes<Flag>;
+    }
+  }
+}
+
+export {};

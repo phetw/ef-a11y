@@ -13,3 +13,4 @@ declare type MergeObject = UnknownObject | Array<unknown>;
  */
 declare const merge: (object: MergeObject, sources: MergeObject, force?: boolean, record?: Array<unknown>) => void;
 export { merge, MergeObject };
+//# sourceMappingURL=merge.d.ts.map

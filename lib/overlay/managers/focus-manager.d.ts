@@ -69,3 +69,4 @@ export declare const size: () => number;
  * @returns {void}
  */
 export declare const clear: () => void;
+//# sourceMappingURL=focus-manager.d.ts.map

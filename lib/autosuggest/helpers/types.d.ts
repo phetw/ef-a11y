@@ -31,3 +31,4 @@ export declare type AutosuggestTargetElement = HTMLElement & {
 export declare type AutosuggestMethodType = 'click' | 'enter' | 'clear' | 'reset' | 'navigation';
 export declare type AutosuggestRenderer = (suggestion: AutosuggestItem, query: AutosuggestQuery | null) => HTMLElement;
 export declare type AutosuggestHighlightable = (suggestion: AutosuggestItem, target: HTMLElement) => boolean;
+//# sourceMappingURL=types.d.ts.map

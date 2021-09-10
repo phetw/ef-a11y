@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { ControlElement, CSSResult, PropertyValues, TemplateResult } from '@refinitiv-ui/core';
 import '../icon';
 /**
@@ -117,3 +118,17 @@ export declare class SearchField extends ControlElement {
      */
     private notifyIcon;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-search-field': SearchField;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-search-field': Partial<SearchField> | JSXInterface.ControlHTMLAttributes<SearchField>;
+    }
+  }
+}
+
+export {};

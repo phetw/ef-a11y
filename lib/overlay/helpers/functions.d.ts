@@ -11,3 +11,4 @@ declare const valueOrZero: (v: number | null | undefined) => number;
  */
 declare const valueOrNull: (v: string) => number | null;
 export { valueOrZero, valueOrNull };
+//# sourceMappingURL=functions.d.ts.map

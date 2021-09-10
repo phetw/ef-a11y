@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { ControlElement, TemplateResult, MultiValue, PropertyValues, CSSResult } from '@refinitiv-ui/core';
 import '../calendar';
 import '../icon';
@@ -180,7 +181,7 @@ export declare class DatetimePicker extends ControlElement implements MultiValue
     set views(views: string[]);
     get views(): string[];
     /**
-     * Validate input. Mark as error if input is invalid
+     * Validates the input, marking the element as invalid if its value does not meet the validation criteria.
      * @returns {void}
      */
     validateInput(): void;
@@ -481,3 +482,17 @@ export declare class DatetimePicker extends ControlElement implements MultiValue
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-datetime-picker': DatetimePicker;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-datetime-picker': Partial<DatetimePicker> | JSXInterface.ControlHTMLAttributes<DatetimePicker>;
+    }
+  }
+}
+
+export {};

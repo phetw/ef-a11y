@@ -87,7 +87,7 @@
       "events": [
         {
           "name": "clear",
-          "description": "Fires when click on cross occurs. `detail.value` provides value of pill if defined. `detail.active` provides current selected state."
+          "description": "Dispatched when click on cross button occurs"
         }
       ]
     }

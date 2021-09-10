@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { ResponsiveElement, TemplateResult, CSSResult, PropertyValues } from '@refinitiv-ui/core';
 /**
  * Layout component for creating responsive applications and components
@@ -90,3 +91,17 @@ export declare class Layout extends ResponsiveElement {
       */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-layout': Layout;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-layout': Partial<Layout> | JSXInterface.HTMLAttributes<Layout>;
+    }
+  }
+}
+
+export {};

@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { ControlElement, TemplateResult, CSSResult, PropertyValues } from '@refinitiv-ui/core';
 import '../number-field';
 /**
@@ -154,6 +155,12 @@ export declare class Slider extends ControlElement {
      * @returns {void}
      */
     protected updated(changedProperties: PropertyValues): void;
+    /**
+     * Show Warning a warning message invalid property
+     * @param propName value for checking
+     * @returns {void}
+     */
+    private showWarningInvalidProperty;
     /**
      * Initialise class properties
      * @returns {void}
@@ -386,3 +393,17 @@ export declare class Slider extends ControlElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-slider': Slider;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-slider': Partial<Slider> | JSXInterface.ControlHTMLAttributes<Slider>;
+    }
+  }
+}
+
+export {};

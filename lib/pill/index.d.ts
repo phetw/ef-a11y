@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { ControlElement, CSSResult, PropertyValues, TemplateResult } from '@refinitiv-ui/core';
 import '../icon';
 /**
@@ -80,3 +81,17 @@ export declare class Pill extends ControlElement {
      */
     private clear;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-pill': Pill;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-pill': Partial<Pill> | JSXInterface.ControlHTMLAttributes<Pill>;
+    }
+  }
+}
+
+export {};

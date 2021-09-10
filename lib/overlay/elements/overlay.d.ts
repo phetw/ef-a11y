@@ -1,3 +1,4 @@
+import { JSXInterface } from '../../jsx';
 import { ResponsiveElement, TemplateResult, CSSResult, PropertyValues, ElementSize } from '@refinitiv-ui/core';
 import { TransitionStyle, PositionTarget, Position, NullOrUndefined, PositionTargetStrategy } from '../helpers/types';
 export { TransitionStyle, PositionTarget, Position, PositionTargetStrategy };
@@ -386,3 +387,17 @@ export declare class Overlay extends ResponsiveElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=overlay.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-overlay': Overlay;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-overlay': Partial<Overlay> | JSXInterface.HTMLAttributes<Overlay>;
+    }
+  }
+}
+
+export {};

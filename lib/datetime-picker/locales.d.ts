@@ -6,3 +6,4 @@ import { Locale } from 'date-fns';
  */
 declare const getDateFNSLocale: (locale: string) => Locale;
 export { getDateFNSLocale };
+//# sourceMappingURL=locales.d.ts.map

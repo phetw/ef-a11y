@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { CSSResult, ControlElement, TemplateResult, PropertyValues } from '@refinitiv-ui/core';
 /**
  * Basic radio button
@@ -89,3 +90,17 @@ export declare class RadioButton extends ControlElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-radio-button': RadioButton;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-radio-button': Partial<RadioButton> | JSXInterface.ControlHTMLAttributes<RadioButton>;
+    }
+  }
+}
+
+export {};

@@ -119,3 +119,4 @@ declare type ItemTriggerEvent = CustomEvent<{
     value: string;
 }>;
 export { OpenedChangedEvent, ValueChangedEvent, ErrorChangedEvent, ActiveChangedEvent, ViewChangedEvent, ItemTriggerEvent, CheckChangedEvent, OffsetChangedEvent, ExpandedChangedEvent, QueryChangedEvent, PageChangedEvent, FromChangedEvent, ToChangedEvent, TapEvent, ResizeEvent };
+//# sourceMappingURL=events.d.ts.map

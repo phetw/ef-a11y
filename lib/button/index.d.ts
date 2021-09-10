@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { ControlElement, CSSResult, PropertyValues, TemplateResult } from '@refinitiv-ui/core';
 import '../icon';
 /**
@@ -122,3 +123,17 @@ export declare class Button extends ControlElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-button': Button;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-button': Partial<Button> | JSXInterface.ControlHTMLAttributes<Button>;
+    }
+  }
+}
+
+export {};

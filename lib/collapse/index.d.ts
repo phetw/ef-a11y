@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { BasicElement, CSSResult, PropertyValues, TemplateResult } from '@refinitiv-ui/core';
 import '../header';
 import '../panel';
@@ -102,3 +103,17 @@ export declare class Collapse extends BasicElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-collapse': Collapse;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-collapse': Partial<Collapse> | JSXInterface.HTMLAttributes<Collapse>;
+    }
+  }
+}
+
+export {};

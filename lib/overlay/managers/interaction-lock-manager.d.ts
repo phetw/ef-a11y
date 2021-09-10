@@ -136,3 +136,4 @@ export declare class ScrollLockManager {
 * @returns {void}
 */
 export declare const applyLock: () => void;
+//# sourceMappingURL=interaction-lock-manager.d.ts.map

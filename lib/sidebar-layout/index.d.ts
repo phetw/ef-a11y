@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { BasicElement, TemplateResult, CSSResult, PropertyValues } from '@refinitiv-ui/core';
 import { Layout } from '../layout';
 import '../layout';
@@ -52,3 +53,17 @@ export declare class SidebarLayout extends BasicElement {
      */
     protected updated(changedProperties: PropertyValues): void;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-sidebar-layout': SidebarLayout;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-sidebar-layout': Partial<SidebarLayout> | JSXInterface.HTMLAttributes<SidebarLayout>;
+    }
+  }
+}
+
+export {};

@@ -1,3 +1,4 @@
+import { JSXInterface } from '../../jsx';
 import { ResponsiveElement, CSSResult, TemplateResult } from '@refinitiv-ui/core';
 /**
  * A private element to find overlay size boundaries
@@ -23,3 +24,17 @@ export declare class OverlayViewport extends ResponsiveElement {
      */
     render(): TemplateResult;
 }
+//# sourceMappingURL=overlay-viewport.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-overlay-viewport': OverlayViewport;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-overlay-viewport': Partial<OverlayViewport> | JSXInterface.HTMLAttributes<OverlayViewport>;
+    }
+  }
+}
+
+export {};

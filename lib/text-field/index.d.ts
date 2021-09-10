@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { ControlElement, CSSResult, PropertyValues, TemplateResult } from '@refinitiv-ui/core';
 import '../icon';
 declare type SelectionIndex = number | null;
@@ -28,6 +29,11 @@ export declare class TextField extends ControlElement {
      */
     static get styles(): CSSResult | CSSResult[];
     /**
+     * A11Y
+     */
+    ariaExpanded: string;
+    ariaActivedescendant: null;
+    /**
      * Set regular expression for input validation
      */
     pattern: string;
@@ -35,12 +41,6 @@ export declare class TextField extends ControlElement {
      * Set place holder text
      */
     placeholder: string;
-    role: string;
-    ariaOwns: string;
-    ariaAutocomplete: string;
-    ariaActivedescendant: string;
-    ariaExpanded: boolean;
-    ariaHaspopup: boolean;
     /**
      * Set state to error
      */
@@ -159,4 +159,18 @@ export declare class TextField extends ControlElement {
      */
     private notifyIcon;
 }
+export {};
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-text-field': TextField;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-text-field': Partial<TextField> | JSXInterface.ControlHTMLAttributes<TextField>;
+    }
+  }
+}
+
 export {};

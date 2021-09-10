@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { BasicElement, CSSResult, TemplateResult, PropertyValues } from '@refinitiv-ui/core';
 export { preload } from './utils/IconLoader';
 export declare class Icon extends BasicElement {
@@ -70,3 +71,17 @@ export declare class Icon extends BasicElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-icon': Icon;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-icon': Partial<Icon> | JSXInterface.HTMLAttributes<Icon>;
+    }
+  }
+}
+
+export {};

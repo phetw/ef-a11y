@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { ControlElement, TemplateResult, CSSResult, PropertyValues } from '@refinitiv-ui/core';
 import '../number-field';
 declare enum Segment {
@@ -361,4 +362,18 @@ export declare class TimePicker extends ControlElement {
      */
     protected render(): TemplateResult;
 }
+export {};
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-time-picker': TimePicker;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-time-picker': Partial<TimePicker> | JSXInterface.ControlHTMLAttributes<TimePicker>;
+    }
+  }
+}
+
 export {};

@@ -100,3 +100,4 @@ export declare class Track {
      */
     hitTest(mousePixel: number): number;
 }
+//# sourceMappingURL=track.d.ts.map

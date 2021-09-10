@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { TemplateResult, CSSResult, PropertyValues } from '@refinitiv-ui/core';
 import '../icon';
 import '../item';
@@ -345,3 +346,17 @@ export declare class OverlayMenu extends Overlay {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-overlay-menu': OverlayMenu;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-overlay-menu': Partial<OverlayMenu> | JSXInterface.HTMLAttributes<OverlayMenu>;
+    }
+  }
+}
+
+export {};

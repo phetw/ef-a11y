@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { BasicElement, PropertyValues, TemplateResult } from '@refinitiv-ui/core';
 /**
  *  An animated graphical component,
@@ -24,3 +25,17 @@ export declare class Loader extends BasicElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-loader': Loader;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-loader': Partial<Loader> | JSXInterface.HTMLAttributes<Loader>;
+    }
+  }
+}
+
+export {};

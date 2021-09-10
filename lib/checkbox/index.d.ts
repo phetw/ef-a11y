@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { ControlElement, TemplateResult, CSSResult, PropertyValues } from '@refinitiv-ui/core';
 import '../icon';
 /**
@@ -31,7 +32,6 @@ export declare class Checkbox extends ControlElement {
      * Set state to indeterminate
      */
     indeterminate: boolean;
-    ariaChecked: boolean;
     /**
      * Getter for label
      */
@@ -73,3 +73,17 @@ export declare class Checkbox extends ControlElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-checkbox': Checkbox;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-checkbox': Partial<Checkbox> | JSXInterface.ControlHTMLAttributes<Checkbox>;
+    }
+  }
+}
+
+export {};

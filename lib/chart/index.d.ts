@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 /// <reference types="chart.js" />
 import { BasicElement, PropertyValues, TemplateResult, CSSResult } from '@refinitiv-ui/core';
 import 'chart.js/dist/Chart.bundle.min.js';
@@ -136,9 +137,9 @@ export declare class Chart extends BasicElement {
     protected createChart(): void;
     /**
      * Destroys the chart.js object
-     * @returns {void}
+     * @returns True if a chart object has been destroyed
      */
-    protected destroyChart(): void;
+    protected destroyChart(): boolean;
     /**
      * Re-renders the chart based on its config
      * @param {ChartUpdateProps} config Additional configuration object for the update process.
@@ -159,9 +160,28 @@ export declare class Chart extends BasicElement {
      */
     static get styles(): CSSResult | CSSResult[];
     /**
+     * Handles resize event of the chart region
+     * @returns {void}
+     */
+    protected onResize(): void;
+    /**
      * A `TemplateResult` that will be used
      * to render the updated internal template.
      * @return Render template
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-chart': Chart;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-chart': Partial<Chart> | JSXInterface.HTMLAttributes<Chart>;
+    }
+  }
+}
+
+export {};

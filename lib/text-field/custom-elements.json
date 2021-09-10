@@ -6,6 +6,16 @@
       "description": "Form control element for text",
       "attributes": [
         {
+          "name": "aria-expanded",
+          "description": "A11Y",
+          "type": "string",
+          "default": "\"false\""
+        },
+        {
+          "name": "aria-activedescendant",
+          "type": "null"
+        },
+        {
           "name": "pattern",
           "description": "Set regular expression for input validation",
           "type": "string",
@@ -77,6 +87,18 @@
         }
       ],
       "properties": [
+        {
+          "name": "ariaExpanded",
+          "attribute": "aria-expanded",
+          "description": "A11Y",
+          "type": "string",
+          "default": "\"false\""
+        },
+        {
+          "name": "ariaActivedescendant",
+          "attribute": "aria-activedescendant",
+          "type": "null"
+        },
         {
           "name": "pattern",
           "attribute": "pattern",

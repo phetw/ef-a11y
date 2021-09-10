@@ -45,3 +45,4 @@ export { flagLoaderInstance as FlagLoader };
  * @returns Array of promises, which will be resolved with SVG bodies.
  */
 export declare const preload: (...attrs: string[]) => Promise<string | undefined>[];
+//# sourceMappingURL=FlagLoader.d.ts.map

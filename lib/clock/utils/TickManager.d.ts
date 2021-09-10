@@ -12,3 +12,4 @@ declare const register: (tickCallback: TickCallback) => void;
  */
 declare const deRegister: (tickCallback: TickCallback) => void;
 export { register, deRegister };
+//# sourceMappingURL=TickManager.d.ts.map

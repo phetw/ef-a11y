@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { CSSResult, ElementSize, PropertyValues } from '@refinitiv-ui/core';
 import { Canvas } from '../canvas';
 /**
@@ -138,3 +139,17 @@ export declare class SwingGauge extends Canvas {
      */
     private renderCanvas;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-swing-gauge': SwingGauge;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-swing-gauge': Partial<SwingGauge> | JSXInterface.HTMLAttributes<SwingGauge>;
+    }
+  }
+}
+
+export {};

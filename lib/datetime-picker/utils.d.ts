@@ -53,3 +53,4 @@ declare const formatToView: (date: Date | number | string) => string;
  */
 declare const getCurrentTime: (includeSeconds?: boolean) => string;
 export { DateTimeSegment, getCurrentTime, formatToView };
+//# sourceMappingURL=utils.d.ts.map

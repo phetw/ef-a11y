@@ -65,7 +65,7 @@
       "events": [
         {
           "name": "initialized",
-          "description": "Fired when chart initialized"
+          "description": "Dispatched when chart is initialized"
         }
       ],
       "slots": [

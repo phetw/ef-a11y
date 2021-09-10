@@ -1,3 +1,4 @@
+import { JSXInterface } from '../../jsx';
 import { PropertyValues, TapEvent } from '@refinitiv-ui/core';
 import { CollectionComposer } from '@refinitiv-ui/utils';
 import { List } from '../../list';
@@ -139,3 +140,17 @@ export declare class Tree<T extends TreeDataItem = TreeDataItem> extends List<T>
      */
     protected get mode(): TreeManagerMode;
 }
+//# sourceMappingURL=tree.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-tree': Tree;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-tree': Partial<Tree> | JSXInterface.HTMLAttributes<Tree>;
+    }
+  }
+}
+
+export {};

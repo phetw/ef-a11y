@@ -19,3 +19,4 @@ declare const applyRegistry: (radio: RadioButton) => void;
  */
 declare const getRadioGroup: (radio: RadioButton) => RadioButton[];
 export { applyRegistry, removeFromRegistry, getRadioGroup };
+//# sourceMappingURL=radio-button-registry.d.ts.map

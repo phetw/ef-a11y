@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { ResponsiveElement, TemplateResult, CSSResult, ElementSize } from '@refinitiv-ui/core';
 /**
  * A Component uses to draw graphics on a web page,
@@ -83,3 +84,17 @@ export declare class Canvas extends ResponsiveElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-canvas': Canvas;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-canvas': Partial<Canvas> | JSXInterface.HTMLAttributes<Canvas>;
+    }
+  }
+}
+
+export {};

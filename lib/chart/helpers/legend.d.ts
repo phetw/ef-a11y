@@ -3,3 +3,4 @@ declare const legendHelper: {
     getLegendStrokeStyle: (dataset: Chart.ChartDataSets, usePointStyle: boolean) => string | undefined;
 };
 export { legendHelper };
+//# sourceMappingURL=legend.d.ts.map

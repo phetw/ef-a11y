@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { ControlElement, CSSResult, PropertyValues, TapEvent, TemplateResult } from '@refinitiv-ui/core';
 import { CollectionComposer, DataItem } from '@refinitiv-ui/utils';
 import '../item';
@@ -234,7 +235,7 @@ export declare class List<T extends DataItem = ItemData> extends ControlElement 
      * Allows for a mapping to be created between
      * Data Item and Item Element.
      * @param item Data item context
-     * @param reusableElement Child element available for reuse
+     * @param recyclableElements Child elements available for reuse
      * @returns List item element
      */
     private createListItem;
@@ -248,6 +249,12 @@ export declare class List<T extends DataItem = ItemData> extends ControlElement 
      * @returns {void}
      */
     private fireSelectionUpdate;
+    /**
+     * Calculates what elements can be recycled safely
+     * @param renderItems Current items to render
+     * @returns Collection of elements to be recycled
+     */
+    private calculateRecyclableElements;
     /**
      * Renders updates to light DOM
      * @returns {void}
@@ -269,3 +276,17 @@ export declare class List<T extends DataItem = ItemData> extends ControlElement 
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-list': List;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-list': Partial<List> | JSXInterface.HTMLAttributes<List>;
+    }
+  }
+}
+
+export {};

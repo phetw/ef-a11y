@@ -8,12 +8,14 @@
         {
           "name": "header",
           "description": "Set text on the header",
-          "type": "string | null"
+          "type": "string",
+          "default": "\"\""
         },
         {
           "name": "footer",
           "description": "Set text on the footer",
-          "type": "string | null"
+          "type": "string",
+          "default": "\"\""
         }
       ],
       "properties": [
@@ -21,27 +23,35 @@
           "name": "header",
           "attribute": "header",
           "description": "Set text on the header",
-          "type": "string | null"
+          "type": "string",
+          "default": "\"\""
         },
         {
           "name": "footer",
           "attribute": "footer",
           "description": "Set text on the footer",
-          "type": "string | null"
+          "type": "string",
+          "default": "\"\""
         },
         {
           "name": "config",
           "description": "Set card configurations"
-        },
-        {
-          "name": "menu",
-          "description": "Card's overlay menu element"
         }
       ],
       "events": [
         {
           "name": "item-trigger",
           "description": "Fired when card menu is selected."
+        }
+      ],
+      "slots": [
+        {
+          "name": "header",
+          "description": "Adds slotted content into the header of the card."
+        },
+        {
+          "name": "footer",
+          "description": "Adds slotted content into the footer of the card."
         }
       ]
     }

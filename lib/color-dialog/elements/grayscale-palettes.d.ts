@@ -1,3 +1,4 @@
+import { JSXInterface } from '../../jsx';
 import { TemplateResult, CSSResult, PropertyValues } from '@refinitiv-ui/core';
 import { Palettes } from './palettes';
 /**
@@ -50,3 +51,17 @@ export declare class GrayscalePalettes extends Palettes {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=grayscale-palettes.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-grayscale-palettes': GrayscalePalettes;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-grayscale-palettes': Partial<GrayscalePalettes> | JSXInterface.HTMLAttributes<GrayscalePalettes>;
+    }
+  }
+}
+
+export {};

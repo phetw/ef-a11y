@@ -1,3 +1,4 @@
+import { JSXInterface } from '../../jsx';
 import { BasicElement, CSSResult, TemplateResult } from '@refinitiv-ui/core';
 import { NullOrUndefined } from '../helpers/types';
 /**
@@ -29,3 +30,17 @@ export declare class OverlayBackdrop extends BasicElement {
      */
     render(): TemplateResult;
 }
+//# sourceMappingURL=overlay-backdrop.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-overlay-backdrop': OverlayBackdrop;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-overlay-backdrop': Partial<OverlayBackdrop> | JSXInterface.HTMLAttributes<OverlayBackdrop>;
+    }
+  }
+}
+
+export {};

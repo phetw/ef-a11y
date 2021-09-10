@@ -91,3 +91,4 @@ export declare const size: () => number;
  * @returns {void}
  */
 export declare const clear: () => void;
+//# sourceMappingURL=viewport-manager.d.ts.map

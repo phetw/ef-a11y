@@ -67,6 +67,12 @@
           "type": "object"
         }
       ],
+      "events": [
+        {
+          "name": "value-changed",
+          "description": "Dispatched when value changes"
+        }
+      ],
       "methods": [
         {
           "name": "selectItem",

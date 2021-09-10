@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { CSSResult, TemplateResult, BasicElement, PropertyValues } from '@refinitiv-ui/core';
 /**
  * Data visualisation component,
@@ -65,3 +66,17 @@ export declare class ProgressBar extends BasicElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-progress-bar': ProgressBar;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-progress-bar': Partial<ProgressBar> | JSXInterface.HTMLAttributes<ProgressBar>;
+    }
+  }
+}
+
+export {};

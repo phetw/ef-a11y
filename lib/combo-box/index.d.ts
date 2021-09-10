@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { ControlElement, CSSResult, PropertyValues, TapEvent, TemplateResult, StyleMap } from '@refinitiv-ui/core';
 import { TranslateDirective } from '@refinitiv-ui/translate';
 import { AnimationTaskRunner, CollectionComposer, DataItem } from '@refinitiv-ui/utils';
@@ -505,3 +506,17 @@ export declare class ComboBox<T extends DataItem = ItemData> extends ControlElem
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-combo-box': ComboBox;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-combo-box': Partial<ComboBox> | JSXInterface.HTMLAttributes<ComboBox>;
+    }
+  }
+}
+
+export {};

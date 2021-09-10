@@ -3,7 +3,7 @@
   "tags": [
     {
       "name": "ef-canvas",
-      "description": "A Component uses\nto draw graphics on a web page,\nit works similarly to the normal HTML5 Canvas element.",
+      "description": "A Component uses to draw graphics on a web page,\nit works similarly to the normal HTML5 Canvas element.",
       "attributes": [
         {
           "name": "autoloop",
@@ -49,7 +49,7 @@
       "events": [
         {
           "name": "frame",
-          "description": "Frame fires next frame event when autoloop is set to true."
+          "description": "dispatched when next Frame event occurs when autoloop is set to true"
         }
       ],
       "methods": [

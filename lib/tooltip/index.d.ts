@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { BasicElement, TemplateResult, CSSResult, PropertyValues } from '@refinitiv-ui/core';
 import '../overlay';
 import { OverlayTransitionStyle as TooltipTransitionStyle } from '../overlay';
@@ -188,7 +189,7 @@ declare class Tooltip extends BasicElement {
      */
     private showTooltipAtPosition;
     /**
-     * Run when document click event happens
+     * Run when document click or contextmenu event happens
      * @returns {void}
      */
     private onClick;
@@ -215,3 +216,17 @@ declare class Tooltip extends BasicElement {
 }
 export * from './elements/tooltip-element';
 export { registerOverflowTooltip, Tooltip, TooltipCondition, TooltipRenderer, TooltipPosition, TooltipTransitionStyle };
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-tooltip': Tooltip;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-tooltip': Partial<Tooltip> | JSXInterface.HTMLAttributes<Tooltip>;
+    }
+  }
+}
+
+export {};

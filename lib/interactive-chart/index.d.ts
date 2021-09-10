@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { ResponsiveElement, TemplateResult, CSSResult, PropertyValues, ElementSize } from '@refinitiv-ui/core';
 import { IChartApi, MouseEventParams } from 'lightweight-charts';
 import '../tooltip';
@@ -363,3 +364,17 @@ export declare class InteractiveChart extends ResponsiveElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-interactive-chart': InteractiveChart;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-interactive-chart': Partial<InteractiveChart> | JSXInterface.HTMLAttributes<InteractiveChart>;
+    }
+  }
+}
+
+export {};

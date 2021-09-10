@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { TemplateResult, CSSResult, PropertyValues, ResponsiveElement, ElementSize } from '@refinitiv-ui/core';
 import '../button';
 /**
@@ -91,3 +92,17 @@ export declare class TabBar extends ResponsiveElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-tab-bar': TabBar;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-tab-bar': Partial<TabBar> | JSXInterface.HTMLAttributes<TabBar>;
+    }
+  }
+}
+
+export {};

@@ -3,7 +3,7 @@
   "tags": [
     {
       "name": "ef-chart",
-      "description": "Charting component that use chartjs library",
+      "description": "Charting component that use ChartJS library",
       "attributes": [
         {
           "name": "config",
@@ -20,7 +20,7 @@
         },
         {
           "name": "colors",
-          "description": "List of avalaible chart colors",
+          "description": "List of available chart colors",
           "type": "string[]"
         }
       ],

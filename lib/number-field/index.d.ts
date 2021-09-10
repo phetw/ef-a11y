@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { ControlElement, CSSResult, TemplateResult, PropertyValues } from '@refinitiv-ui/core';
 import '../icon';
 /**
@@ -277,3 +278,17 @@ export declare class NumberField extends ControlElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-number-field': NumberField;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-number-field': Partial<NumberField> | JSXInterface.ControlHTMLAttributes<NumberField>;
+    }
+  }
+}
+
+export {};

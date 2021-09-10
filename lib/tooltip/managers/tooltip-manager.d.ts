@@ -13,3 +13,4 @@ export declare const register: (tooltip: Tooltip, documentCallbacks: DocumentCal
  * @returns {void}
  */
 export declare const deregister: (tooltip: Tooltip) => void;
+//# sourceMappingURL=tooltip-manager.d.ts.map

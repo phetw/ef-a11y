@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { CSSResult, ElementSize, PropertyValues, TemplateResult } from '@refinitiv-ui/core';
 import { Overlay } from '../overlay';
 import '../loader';
@@ -516,3 +517,17 @@ export declare class Autosuggest extends Overlay {
      */
     private calculateContentMaxHeight;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-autosuggest': Autosuggest;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-autosuggest': Partial<Autosuggest> | JSXInterface.HTMLAttributes<Autosuggest>;
+    }
+  }
+}
+
+export {};

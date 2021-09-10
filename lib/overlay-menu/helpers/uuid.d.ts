@@ -5,3 +5,4 @@
  */
 declare const getId: () => string;
 export { getId };
+//# sourceMappingURL=uuid.d.ts.map

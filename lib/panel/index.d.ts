@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { BasicElement, CSSResult, TemplateResult } from '@refinitiv-ui/core';
 /**
  * A container for components.
@@ -31,3 +32,17 @@ export declare class Panel extends BasicElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-panel': Panel;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-panel': Partial<Panel> | JSXInterface.HTMLAttributes<Panel>;
+    }
+  }
+}
+
+export {};

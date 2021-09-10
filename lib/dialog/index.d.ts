@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { CSSResult, TemplateResult, ElementSize, PropertyValues } from '@refinitiv-ui/core';
 import { Overlay } from '../overlay';
 import '../icon';
@@ -182,3 +183,17 @@ export declare class Dialog extends Overlay {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-dialog': Dialog;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-dialog': Partial<Dialog> | JSXInterface.HTMLAttributes<Dialog>;
+    }
+  }
+}
+
+export {};

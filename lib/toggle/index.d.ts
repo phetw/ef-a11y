@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { ControlElement, TemplateResult, CSSResult, PropertyValues } from '@refinitiv-ui/core';
 /**
  * Form control that can toggle between 2 states
@@ -60,3 +61,17 @@ export declare class Toggle extends ControlElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-toggle': Toggle;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-toggle': Partial<Toggle> | JSXInterface.ControlHTMLAttributes<Toggle>;
+    }
+  }
+}
+
+export {};

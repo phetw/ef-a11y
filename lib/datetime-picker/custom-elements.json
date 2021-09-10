@@ -324,7 +324,7 @@
       "methods": [
         {
           "name": "validateInput",
-          "description": "Validate input. Mark as error if input is invalid",
+          "description": "Validates the input, marking the element as invalid if its value does not meet the validation criteria.",
           "params": []
         }
       ]

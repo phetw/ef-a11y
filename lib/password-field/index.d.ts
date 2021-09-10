@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { ControlElement, CSSResult, PropertyValues, TemplateResult } from '@refinitiv-ui/core';
 import '../icon';
 /**
@@ -123,3 +124,17 @@ export declare class PasswordField extends ControlElement {
      */
     private togglePasswordVisibility;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-password-field': PasswordField;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-password-field': Partial<PasswordField> | JSXInterface.ControlHTMLAttributes<PasswordField>;
+    }
+  }
+}
+
+export {};

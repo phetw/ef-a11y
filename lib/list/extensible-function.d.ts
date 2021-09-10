@@ -6,3 +6,4 @@
 export declare abstract class ExtensibleFunction extends Function {
     constructor(fn: Function);
 }
+//# sourceMappingURL=extensible-function.d.ts.map

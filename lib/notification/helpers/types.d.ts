@@ -8,3 +8,4 @@ export declare type TaskOptions = {
     type: string;
     duration: number;
 };
+//# sourceMappingURL=types.d.ts.map

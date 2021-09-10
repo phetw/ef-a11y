@@ -1,3 +1,4 @@
+import { JSXInterface } from '../../jsx';
 import { BasicElement, TemplateResult, CSSResult } from '@refinitiv-ui/core';
 import '../../progress-bar';
 import '../../layout';
@@ -93,3 +94,17 @@ export declare class TornadoItem extends BasicElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=tornado-item.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-tornado-item': TornadoItem;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-tornado-item': Partial<TornadoItem> | JSXInterface.HTMLAttributes<TornadoItem>;
+    }
+  }
+}
+
+export {};

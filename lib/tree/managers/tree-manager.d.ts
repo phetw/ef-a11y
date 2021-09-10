@@ -234,3 +234,4 @@ export declare class TreeManager<T extends TreeDataItem> {
      */
     uncheckAllItems(): void;
 }
+//# sourceMappingURL=tree-manager.d.ts.map

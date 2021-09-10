@@ -9,3 +9,4 @@ import { ItemData } from '../../item';
  */
 export declare type ComboBoxFilter<T extends DataItem = ItemData> = (item: T) => boolean;
 export declare type ComboBoxData<T extends DataItem = ItemData> = T[] | Promise<T[]>;
+//# sourceMappingURL=types.d.ts.map

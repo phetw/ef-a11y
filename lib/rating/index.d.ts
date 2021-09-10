@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { BasicElement, TemplateResult, CSSResult, PropertyValues } from '@refinitiv-ui/core';
 /**
  * Star visualisation component that is generally used for ranking
@@ -74,3 +75,17 @@ export declare class Rating extends BasicElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-rating': Rating;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-rating': Partial<Rating> | JSXInterface.HTMLAttributes<Rating>;
+    }
+  }
+}
+
+export {};

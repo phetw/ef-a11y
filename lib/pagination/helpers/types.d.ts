@@ -7,3 +7,4 @@ export declare type PageInfo = {
     totalCount: number;
     pageSize: number;
 };
+//# sourceMappingURL=types.d.ts.map

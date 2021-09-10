@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { PropertyValues, TemplateResult, CSSResult } from '@refinitiv-ui/core';
 import { Collapse } from '../collapse';
 /**
@@ -63,3 +64,17 @@ export declare class Accordion extends Collapse {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-accordion': Accordion;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-accordion': Partial<Accordion> | JSXInterface.HTMLAttributes<Accordion>;
+    }
+  }
+}
+
+export {};

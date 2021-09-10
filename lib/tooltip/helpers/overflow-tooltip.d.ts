@@ -7,3 +7,4 @@ import { TooltipRenderer } from './types';
  */
 declare const register: (target: HTMLElement, render?: TooltipRenderer) => void;
 export { register };
+//# sourceMappingURL=overflow-tooltip.d.ts.map

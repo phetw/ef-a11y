@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { BasicElement, PropertyValues, TemplateResult, CSSResult } from '@refinitiv-ui/core';
 import '@refinitiv-ui/phrasebook/lib/locale/en/pagination';
 import { Translate } from '@refinitiv-ui/translate';
@@ -190,3 +191,17 @@ export declare class Pagination extends BasicElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-pagination': Pagination;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-pagination': Partial<Pagination> | JSXInterface.HTMLAttributes<Pagination>;
+    }
+  }
+}
+
+export {};

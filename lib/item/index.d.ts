@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { ControlElement, CSSResult, PropertyValues, TemplateResult } from '@refinitiv-ui/core';
 import '../icon';
 import '../checkbox';
@@ -28,6 +29,8 @@ export declare class Item extends ControlElement {
      * slotted children and the internal template of the element.
      */
     static get styles(): CSSResult | CSSResult[];
+    role: string;
+    ariaSelected: string;
     /**
      * The text for the label indicating the meaning of the item.
      * By having both `label` and content, `label` always takes priority
@@ -46,8 +49,6 @@ export declare class Item extends ControlElement {
      * Indicates that the item is selected
      */
     selected: boolean;
-    role: string;
-    ariaSelected: boolean;
     /**
      * Is the item part of a multiple selection
      */
@@ -134,3 +135,17 @@ export declare class Item extends ControlElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-item': Item;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-item': Partial<Item> | JSXInterface.ControlHTMLAttributes<Item>;
+    }
+  }
+}
+
+export {};

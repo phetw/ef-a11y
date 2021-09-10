@@ -24,3 +24,4 @@ declare const getMaximumTextWidth: (ctx: CanvasRenderingContext2D, cells: Heatma
  */
 declare const getMaximumLabelTextWidth: (labels: string[]) => string;
 export { getResponsiveFontSize, getMaximumTextWidth, getMaximumLabelTextWidth, MIN_FONT_SIZE, MAX_FONT_SIZE };
+//# sourceMappingURL=text.d.ts.map

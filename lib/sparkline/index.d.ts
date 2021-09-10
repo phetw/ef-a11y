@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { CSSResult, PropertyValues, ResponsiveElement, TemplateResult, ElementSize } from '@refinitiv-ui/core';
 import '@refinitiv-ui/browser-sparkline';
 import type { BrowserSparklineChart } from '@refinitiv-ui/browser-sparkline';
@@ -90,3 +91,17 @@ export declare class Sparkline extends ResponsiveElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-sparkline': Sparkline;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-sparkline': Partial<Sparkline> | JSXInterface.HTMLAttributes<Sparkline>;
+    }
+  }
+}
+
+export {};

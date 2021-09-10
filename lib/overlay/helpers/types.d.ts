@@ -95,3 +95,4 @@ declare type ViewAreaInfo = {
     viewOffsetLeft: number;
 };
 export { Calculated, PositionTargetStrategy, Position, PositionTarget, PositionStyle, TransitionStyle, DEFAULT_ALIGN, DEFAULT_TARGET_STRATEGY, NullOrUndefined, SizingInfo, CalculatedPosition, SizingInfoRect, ViewAreaInfo };
+//# sourceMappingURL=types.d.ts.map

@@ -10,3 +10,4 @@ export declare type CardConfig = {
         data: OverlayMenuData;
     };
 };
+//# sourceMappingURL=types.d.ts.map

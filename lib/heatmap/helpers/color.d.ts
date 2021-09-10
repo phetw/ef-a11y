@@ -28,3 +28,4 @@ declare const darken: (colorString: string) => string;
  */
 declare const blend: (color1: string, color2: string, backgroundColor: string, amount: number) => string;
 export { blend, brighten, darken, isLight, interpolate };
+//# sourceMappingURL=color.d.ts.map

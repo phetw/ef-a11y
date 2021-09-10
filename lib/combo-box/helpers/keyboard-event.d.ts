@@ -15,3 +15,4 @@ export declare class CustomKeyboardEvent extends Event {
      */
     constructor(type: string, eventInitDict?: KeyboardEventInit);
 }
+//# sourceMappingURL=keyboard-event.d.ts.map

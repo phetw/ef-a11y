@@ -12,3 +12,4 @@ export declare const register: (draggableElement: HTMLElement, handle: HTMLEleme
  * @returns {void}
  */
 export declare const deregister: (draggableElement: HTMLElement) => void;
+//# sourceMappingURL=draggable-element.d.ts.map

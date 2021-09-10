@@ -6,6 +6,16 @@
       "description": "Used as a basic building block to compose complex custom elements,\nadditionally it can be used by applications\nto create simple menus or navigation panels.",
       "attributes": [
         {
+          "name": "role",
+          "type": "string",
+          "default": "\"option\""
+        },
+        {
+          "name": "aria-selected",
+          "type": "string",
+          "default": "\"false\""
+        },
+        {
           "name": "label",
           "description": "The text for the label indicating the meaning of the item.\nBy having both `label` and content, `label` always takes priority",
           "type": "string | null"
@@ -62,6 +72,18 @@
         }
       ],
       "properties": [
+        {
+          "name": "role",
+          "attribute": "role",
+          "type": "string",
+          "default": "\"option\""
+        },
+        {
+          "name": "ariaSelected",
+          "attribute": "aria-selected",
+          "type": "string",
+          "default": "\"false\""
+        },
         {
           "name": "label",
           "attribute": "label",

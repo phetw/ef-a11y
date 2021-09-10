@@ -6,3 +6,4 @@ declare const helpers: {
     elasticOut: (time: number) => number;
 };
 export { helpers };
+//# sourceMappingURL=canvas.d.ts.map

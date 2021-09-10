@@ -37,3 +37,4 @@ export declare const updateElementContent: (el: Item, query: string, label: stri
  * @returns item
  */
 export declare const itemRenderer: AutosuggestRenderer;
+//# sourceMappingURL=utils.d.ts.map

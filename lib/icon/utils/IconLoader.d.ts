@@ -45,3 +45,4 @@ export { iconLoaderInstance as IconLoader };
  * @returns Array of promises, which will be resolved with SVG bodies.
  */
 export declare const preload: (...attrs: string[]) => Promise<string | undefined>[];
+//# sourceMappingURL=IconLoader.d.ts.map

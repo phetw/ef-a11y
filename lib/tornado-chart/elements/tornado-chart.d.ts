@@ -1,3 +1,4 @@
+import { JSXInterface } from '../../jsx';
 import { ResponsiveElement, TemplateResult, CSSResult, ElementSize } from '@refinitiv-ui/core';
 import './tornado-item';
 /**
@@ -61,3 +62,17 @@ export declare class TornadoChart extends ResponsiveElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=tornado-chart.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-tornado-chart': TornadoChart;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-tornado-chart': Partial<TornadoChart> | JSXInterface.HTMLAttributes<TornadoChart>;
+    }
+  }
+}
+
+export {};

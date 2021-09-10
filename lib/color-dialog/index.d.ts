@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { TemplateResult, CSSResult, PropertyValues } from '@refinitiv-ui/core';
 import { Translate } from '@refinitiv-ui/translate';
 import '@refinitiv-ui/phrasebook/lib/locale/en/color-dialog';
@@ -215,3 +216,17 @@ export declare class ColorDialog extends Dialog {
      */
     protected get footerRegion(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-color-dialog': ColorDialog;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-color-dialog': Partial<ColorDialog> | JSXInterface.HTMLAttributes<ColorDialog>;
+    }
+  }
+}
+
+export {};

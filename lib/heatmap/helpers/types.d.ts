@@ -38,3 +38,4 @@ declare type HeatmapCustomisableProperties = {
 declare type HeatmapTooltipCallback = (activeCell: HeatmapCell) => HTMLElement | undefined;
 declare type HeatmapRenderCallback = (cell: HeatmapCell) => HeatmapCustomisableProperties;
 export { HeatmapCell, HeatmapXAxis, HeatmapYAxis, HeatmapConfig, HeatmapTooltipCallback, HeatmapRenderCallback, HeatmapCustomisableProperties };
+//# sourceMappingURL=types.d.ts.map

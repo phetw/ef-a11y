@@ -31,3 +31,4 @@ interface Coordinate {
     y: number;
 }
 export { SwingGaugeData, CanvasOption, SwingGaugeDrawOption, Coordinate };
+//# sourceMappingURL=types.d.ts.map

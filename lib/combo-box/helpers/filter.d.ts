@@ -8,3 +8,4 @@ import { ItemData } from '../../item';
  * @returns Filter accepting an item
  */
 export declare const defaultFilter: <T extends DataItem = ItemData>(el: ComboBox<T>) => ComboBoxFilter<T>;
+//# sourceMappingURL=filter.d.ts.map

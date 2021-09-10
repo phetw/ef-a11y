@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { BasicElement, TemplateResult, CSSResult } from '@refinitiv-ui/core';
 /**
  * Use to identify and separate different sections of a page.
@@ -29,3 +30,17 @@ export declare class Header extends BasicElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-header': Header;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-header': Partial<Header> | JSXInterface.HTMLAttributes<Header>;
+    }
+  }
+}
+
+export {};

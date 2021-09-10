@@ -6,14 +6,10 @@
       "description": "Displays a text with alternative truncation",
       "attributes": [
         {
-          "name": "truncate",
-          "description": "Enable shortening the slot content",
-          "type": "\"\" | \"center\" | null | undefined"
-        },
-        {
-          "name": "max-line",
+          "name": "line-clamp",
           "description": "Limit the number of lines before truncating",
-          "type": "null"
+          "type": "number",
+          "default": "0"
         },
         {
           "name": "error",
@@ -30,16 +26,11 @@
       ],
       "properties": [
         {
-          "name": "truncate",
-          "attribute": "truncate",
-          "description": "Enable shortening the slot content",
-          "type": "\"\" | \"center\" | null | undefined"
-        },
-        {
-          "name": "maxLine",
-          "attribute": "max-line",
+          "name": "lineClamp",
+          "attribute": "line-clamp",
           "description": "Limit the number of lines before truncating",
-          "type": "null"
+          "type": "number",
+          "default": "0"
         },
         {
           "name": "error",

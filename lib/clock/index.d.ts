@@ -1,3 +1,4 @@
+import { JSXInterface } from '../jsx';
 import { TemplateResult, CSSResult, PropertyValues, BasicElement } from '@refinitiv-ui/core';
 /**
  * Display hours, minutes and seconds as clock interface
@@ -292,3 +293,17 @@ export declare class Clock extends BasicElement {
      */
     protected render(): TemplateResult;
 }
+//# sourceMappingURL=index.d.ts.map
+declare global {
+  interface HTMLElementTagNameMap {
+    'ef-clock': Clock;
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'ef-clock': Partial<Clock> | JSXInterface.HTMLAttributes<Clock>;
+    }
+  }
+}
+
+export {};

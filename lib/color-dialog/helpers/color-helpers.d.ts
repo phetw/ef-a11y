@@ -60,3 +60,4 @@ export declare class ColorHelpers {
     static isValidDecimalForRGB(value: string): boolean;
 }
 export {};
+//# sourceMappingURL=color-helpers.d.ts.map

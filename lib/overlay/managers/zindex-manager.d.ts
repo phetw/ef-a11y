@@ -78,3 +78,4 @@ export declare const getOverlays: () => Overlay[];
  * @returns overlay layer list
  */
 export declare const getOverlayLayers: () => OverlayLayer[];
+//# sourceMappingURL=zindex-manager.d.ts.map

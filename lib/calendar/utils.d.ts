@@ -10,3 +10,4 @@ export declare type MonthInfo = {
  */
 declare const monthInfo: (value: string) => MonthInfo;
 export { monthInfo };
+//# sourceMappingURL=utils.d.ts.map
