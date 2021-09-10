@@ -1,0 +1,1 @@
+{"version":3,"file":"types.d.ts","sourceRoot":"","sources":["../../../src/pagination/helpers/types.ts"],"names":[],"mappings":"AAAA;;GAEG;AACH,oBAAY,QAAQ,GAAG;IACrB,IAAI,EAAE,MAAM,CAAC;IACb,EAAE,EAAE,MAAM,CAAC;IACX,UAAU,EAAE,MAAM,CAAC;IACnB,QAAQ,EAAE,MAAM,CAAC;CAClB,CAAC"}
